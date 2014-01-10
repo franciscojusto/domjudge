@@ -69,5 +69,5 @@ sudo service apache2 restart
 sudo a2dissite default
 sudo service apache2 restart
 
-sudo chmod –R 777 /home/codejam/domjudge/main-www/
+sudo chmod 777 main-www/
 
