@@ -42,13 +42,9 @@ sudo apt-get install libjsoncpp-dev
 #Add something
 #Sudo make submitclient
 
-cd domserver/bin
+sudo ./domserver/bin/dj-setup-database -u root -r install 
 
-sudo ./dj-setup-database –u root –r install 
-
-cd ../../
-
-sudo ln –s $HOME/domjudge/domserver/etc/apache.conf /etc/apache2/conf.d/domjudge.conf
+sudo ln -s $HOME/domjudge/domserver/etc/apache.conf /etc/apache2/conf.d/domjudge.conf
 
 echo "ServerName localhost" | sudo tee /etc/apache2/conf.d/fqdn
 
@@ -58,7 +54,7 @@ sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/ultico
 
 OLD="var/www"
 OLD="${OLD//\//\\/}"
-NEW="home/codejam/domjudge/main-www"
+NEW="home/sang/domjudge/main-www"
 NEW="${NEW//\//\\/}"
 
 sed -i "s/${OLD}/${NEW}/g" /etc/apache2/sites-available/ulticodersite
