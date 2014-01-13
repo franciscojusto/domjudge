@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'save_sources2file.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'save_sources2file.in' on Fri Jan 10 14:26:37 EST 2014.
  *
  * Saves all submissions from the database. This can be used to later
  * restore them with 'restore_sources2db'.

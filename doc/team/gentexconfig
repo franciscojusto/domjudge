@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'gentexconfig.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'gentexconfig.in' on Fri Jan 10 14:26:37 EST 2014.
  *
  * This script outputs configuration settings in TeX format for
  * inclusion in the team manual. When the system is still

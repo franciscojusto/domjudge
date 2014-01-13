@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'simulate_contest.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'simulate_contest.in' on Fri Jan 10 14:26:37 EST 2014.
  *
  * Program to do a "relive" simulation of a previous contest: all
  * original results are added to the scoreboard in real contest time.

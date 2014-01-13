@@ -3,7 +3,7 @@
 // Use configure with the right parameters, and run 'make' and 'make install'
 // Variables you can change are in common-config.php and judgehost-config.php
 
-// Generated from 'judgehost-static.php.in' on Thu Jan  9 10:15:58 EST 2014.
+// Generated from 'judgehost-static.php.in' on Fri Jan 10 14:26:36 EST 2014.
 
 define('DOMJUDGE_VERSION', '4.0.0DEV');
 
