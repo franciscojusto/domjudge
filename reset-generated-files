@@ -3,3 +3,4 @@
 git rm -r --cached .
 git add .
 git clean -fdX
+sudo rm -r domserver judgehost
