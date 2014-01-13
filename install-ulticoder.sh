@@ -30,7 +30,7 @@ cd domjudge
 sudo make dist
 sudo make maintainer-conf
 
-./configure --prefix=$HOME/domjudge
+sudo ./configure --prefix=$HOME/domjudge
 
 sudo make domserver
 sudo make install-domserver
