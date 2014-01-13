@@ -5,11 +5,11 @@ echo "Installing ulticoder"
 cd $HOME
 
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install aptitude
-sudo apt-get install git 
+sudo apt-get -y upgrade
+sudo apt-get -y install aptitude
+sudo apt-get -y install git 
 
-#sudo git clone https://github.com/franciscojusto/domjudge.git
+sudo git clone https://github.com/franciscojusto/domjudge.git
 
 sudo apt-get -y install gcc g++ make libcurl4-gnutls-dev mysql-server \
         apache2 php5 php5-cli libapache2-mod-php5 php5-mysql php5-json \
@@ -68,3 +68,4 @@ sudo a2dissite default
 sudo service apache2 restart
 
 sudo chmod 777 main-www/
+
