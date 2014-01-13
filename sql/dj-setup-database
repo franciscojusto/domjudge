@@ -1,13 +1,13 @@
 #!/bin/sh
-# Generated from 'dj-setup-database.in' on Thu Jan  9 10:15:58 EST 2014.
+# Generated from 'dj-setup-database.in' on Mon Jan 13 10:26:42 EST 2014.
 
 # This script allows one to perform DOMjudge database setup actions.
 # See usage below for possible commands and options.
 
 set -e
 
-ETCDIR="/home/codejam/domjudge/domserver/etc"
-SQLDIR="/home/codejam/domjudge/domserver/sql"
+ETCDIR="/home/rui/domjudge/etc"
+SQLDIR="/home/rui/domjudge/sql"
 
 PASSWDFILE="$ETCDIR/dbpasswords.secret"
 

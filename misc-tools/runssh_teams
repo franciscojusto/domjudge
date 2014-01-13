@@ -10,7 +10,7 @@
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-require('/home/codejam/domjudge/domserver/etc/domserver-static.php');
+require('/home/rui/domjudge/etc/domserver-static.php');
 require(ETCDIR . '/domserver-config.php');
 
 define ('SCRIPT_ID', 'runssh_teams');

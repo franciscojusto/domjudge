@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'judgedaemon.in' on Fri Jan 10 14:26:37 EST 2014.
+ * Generated from 'judgedaemon.in' on Mon Jan 13 10:26:42 EST 2014.
  *
  * This is a wrapper script which sets the configuration and system
  * paths and then calls the main judgedaemon code.
@@ -11,6 +11,6 @@
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-require('/home/codejam/domjudge/judgehost/etc/judgehost-static.php');
+require('/home/rui/domjudge/etc/judgehost-static.php');
 
 include(LIBJUDGEDIR . '/judgedaemon.main.php');

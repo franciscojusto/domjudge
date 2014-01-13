@@ -3,24 +3,24 @@
 // Use configure with the right parameters, and run 'make' and 'make install'
 // Variables you can change are in common-config.php and domserver-config.php
 
-// Generated from 'domserver-static.php.in' on Fri Jan 10 14:26:36 EST 2014.
+// Generated from 'domserver-static.php.in' on Mon Jan 13 10:26:42 EST 2014.
 
 define('DOMJUDGE_VERSION', '4.0.0DEV');
 
-define('BINDIR',      '/home/codejam/domjudge/domserver/bin');
-define('ETCDIR',      '/home/codejam/domjudge/domserver/etc');
-define('WWWDIR',      '/home/codejam/domjudge/domserver/www');
-define('LIBDIR',      '/home/codejam/domjudge/domserver/lib');
-define('LIBEXTDIR',   '/home/codejam/domjudge/domserver/lib/ext');
-define('LIBWWWDIR',   '/home/codejam/domjudge/domserver/lib/www');
-define('LIBSUBMITDIR','/home/codejam/domjudge/domserver/lib/submit');
-define('LOGDIR',      '/home/codejam/domjudge/domserver/log');
-define('RUNDIR',      '/home/codejam/domjudge/domserver/run');
-define('TMPDIR',      '/home/codejam/domjudge/domserver/tmp');
-define('SUBMITDIR',   '/home/codejam/domjudge/domserver/submissions');
+define('BINDIR',      '/home/rui/domjudge/bin');
+define('ETCDIR',      '/home/rui/domjudge/etc');
+define('WWWDIR',      '/home/rui/domjudge/www');
+define('LIBDIR',      '/home/rui/domjudge/lib');
+define('LIBEXTDIR',   '/home/rui/domjudge/lib/ext');
+define('LIBWWWDIR',   '/home/rui/domjudge/lib/www');
+define('LIBSUBMITDIR','/home/rui/domjudge/lib/submit');
+define('LOGDIR',      '/home/rui/domjudge/output/log');
+define('RUNDIR',      '/home/rui/domjudge/output/run');
+define('TMPDIR',      '/home/rui/domjudge/output/tmp');
+define('SUBMITDIR',   '/home/rui/domjudge/output/submissions');
 
 define('SUBMIT_DEFAULT', 2);
-define('ENABLE_CMDSUBMIT_SERVER', 0);
+define('ENABLE_CMDSUBMIT_SERVER', 1);
 define('ENABLE_WEBSUBMIT_SERVER', 1);
 
 set_include_path(get_include_path() . PATH_SEPARATOR . LIBEXTDIR);

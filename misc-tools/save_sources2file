@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'save_sources2file.in' on Fri Jan 10 14:26:37 EST 2014.
+ * Generated from 'save_sources2file.in' on Mon Jan 13 10:26:42 EST 2014.
  *
  * Saves all submissions from the database. This can be used to later
  * restore them with 'restore_sources2db'.
@@ -14,7 +14,7 @@
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-require('/home/codejam/domjudge/domserver/etc/domserver-static.php');
+require('/home/rui/domjudge/etc/domserver-static.php');
 require(ETCDIR . '/domserver-config.php');
 
 define('SCRIPT_ID', 'save_sources2file');

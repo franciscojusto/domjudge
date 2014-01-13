@@ -3,18 +3,18 @@
 // Use configure with the right parameters, and run 'make' and 'make install'
 // Variables you can change are in common-config.php and judgehost-config.php
 
-// Generated from 'judgehost-static.php.in' on Fri Jan 10 14:26:36 EST 2014.
+// Generated from 'judgehost-static.php.in' on Mon Jan 13 10:26:42 EST 2014.
 
 define('DOMJUDGE_VERSION', '4.0.0DEV');
 
-define('BINDIR',      '/home/codejam/domjudge/judgehost/bin');
-define('ETCDIR',      '/home/codejam/domjudge/judgehost/etc');
-define('LIBDIR',      '/home/codejam/domjudge/judgehost/lib');
-define('LIBJUDGEDIR', '/home/codejam/domjudge/judgehost/lib/judge');
-define('LOGDIR',      '/home/codejam/domjudge/judgehost/log');
-define('RUNDIR',      '/home/codejam/domjudge/judgehost/run');
-define('TMPDIR',      '/home/codejam/domjudge/judgehost/tmp');
-define('JUDGEDIR',    '/home/codejam/domjudge/judgehost/judgings');
+define('BINDIR',      '/home/rui/domjudge/bin');
+define('ETCDIR',      '/home/rui/domjudge/etc');
+define('LIBDIR',      '/home/rui/domjudge/lib');
+define('LIBJUDGEDIR', '/home/rui/domjudge/lib/judge');
+define('LOGDIR',      '/home/rui/domjudge/output/log');
+define('RUNDIR',      '/home/rui/domjudge/output/run');
+define('TMPDIR',      '/home/rui/domjudge/output/tmp');
+define('JUDGEDIR',    '/home/rui/domjudge/output/judging');
 
 define('RUNUSER',     'domjudge-run');
 define('USE_CGROUPS', '0');

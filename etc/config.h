@@ -38,7 +38,7 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the <jsoncpp/json/json.h> header file. */
-/* #undef HAVE_JSONCPP_JSON_JSON_H */
+#define HAVE_JSONCPP_JSON_JSON_H 1
 
 /* Define to 1 if you have the <libcgroup.h> header file. */
 /* #undef HAVE_LIBCGROUP_H */
@@ -186,7 +186,7 @@
 /* Define to `__inline__' or `__inline' if that's what the C compiler
    calls it, or to nothing if 'inline' is not supported under any name.  */
 #ifndef __cplusplus
-/* #undef inline */
+#define inline __inline__
 #endif
 
 /* Define to rpl_malloc if the replacement function should be used. */

@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'static_scoreboard.in' on Fri Jan 10 14:26:37 EST 2014.
+ * Generated from 'static_scoreboard.in' on Mon Jan 13 10:26:42 EST 2014.
  *
  * Output public scoreboard static HTML to standard out.
  * This is basically a snapshot of the public scoreboard in the
@@ -20,7 +20,7 @@
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-require('/home/codejam/domjudge/domserver/etc/domserver-static.php');
+require('/home/rui/domjudge/etc/domserver-static.php');
 require(ETCDIR . '/domserver-config.php');
 
 define ('SCRIPT_ID', 'static_scoreboard');

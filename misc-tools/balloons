@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'balloons.in' on Fri Jan 10 14:26:37 EST 2014.
+ * Generated from 'balloons.in' on Mon Jan 13 10:26:42 EST 2014.
  *
  * Notify contest crew when there is a new, correct submission (for
  * which a balloon has to be handed out). Alternatively there's also
@@ -13,7 +13,7 @@
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-require('/home/codejam/domjudge/domserver/etc/domserver-static.php');
+require('/home/rui/domjudge/etc/domserver-static.php');
 require(ETCDIR . '/domserver-config.php');
 
 define ('SCRIPT_ID', 'balloons');

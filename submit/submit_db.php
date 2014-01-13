@@ -8,14 +8,14 @@
  * Called: submit_db.php <team> <ip> <problem> <langext> [<tempfile> <filename>]...
  * Returns exitcode != 0 on failure.
  *
- * Generated from 'submit_db.php.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'submit_db.php.in' on Mon Jan 13 10:26:42 EST 2014.
  *
  * Part of the DOMjudge Programming Contest Jury System and licenced
  * under the GNU GPL. See README and COPYING for details.
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-require('/home/codejam/domjudge/domserver/etc/domserver-static.php');
+require('/home/rui/domjudge/etc/domserver-static.php');
 require(ETCDIR . '/domserver-config.php');
 
 define ('SCRIPT_ID', 'submit_db');

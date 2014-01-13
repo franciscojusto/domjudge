@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'gentexconfig.in' on Fri Jan 10 14:26:37 EST 2014.
+ * Generated from 'gentexconfig.in' on Mon Jan 13 10:26:42 EST 2014.
  *
  * This script outputs configuration settings in TeX format for
  * inclusion in the team manual. When the system is still
@@ -14,7 +14,7 @@
  */
 if ( isset($_SERVER['REMOTE_ADDR']) ) die ("Commandline use only");
 
-$config = '/home/codejam/domjudge/domserver/etc/domserver-static.php';
+$config = '/home/rui/domjudge/etc/domserver-static.php';
 
 // This script might be run before or after autoconf variable
 // substitution, so we try to read the config from all possible

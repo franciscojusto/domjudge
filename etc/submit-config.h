@@ -1,4 +1,4 @@
-// Generated from 'submit-config.h.in' on Fri Jan 10 14:26:36 EST 2014.
+// Generated from 'submit-config.h.in' on Mon Jan 13 10:26:42 EST 2014.
 
 #ifndef _SUBMIT_CONFIG_
 #define _SUBMIT_CONFIG_
@@ -13,7 +13,7 @@
 
 /* Submission methods and default. */
 #define SUBMIT_DEFAULT    2
-#define SUBMIT_ENABLE_CMD 0
+#define SUBMIT_ENABLE_CMD 1
 #define SUBMIT_ENABLE_WEB 1
 
 /* Default TCP port to use for command-line submit client/daemon. */
