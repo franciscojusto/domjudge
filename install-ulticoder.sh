@@ -25,6 +25,8 @@ sudo apt-get -y install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-comp
 
 sudo apt-get -y install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-info linuxdoc-tools-latex$
 
+sudo apt-get -y install libjsoncpp-dev
+
 echo "Entering to domjudge directory"
 cd domjudge
 sudo make dist
@@ -38,8 +40,6 @@ sudo make judgehost
 sudo make install-judgehost
 sudo make docs
 sudo make install-docs
-
-sudo apt-get install libjsoncpp-dev
 
 #Add something
 #Sudo make submitclient
