@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'combined_scoreboard.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'combined_scoreboard.in' on Fri Jan 10 14:26:37 EST 2014.
  *
  * Generates a combined scoreboard aggregated from multiple sites.
  * The scoreboard is static, i.e. without automatic refresh, and with

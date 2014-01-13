@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'judgedaemon.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'judgedaemon.in' on Fri Jan 10 14:26:37 EST 2014.
  *
  * This is a wrapper script which sets the configuration and system
  * paths and then calls the main judgedaemon code.

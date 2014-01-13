@@ -1,4 +1,4 @@
-// Generated from 'submit-config.h.in' on Thu Jan  9 10:15:58 EST 2014.
+// Generated from 'submit-config.h.in' on Fri Jan 10 14:26:36 EST 2014.
 
 #ifndef _SUBMIT_CONFIG_
 #define _SUBMIT_CONFIG_

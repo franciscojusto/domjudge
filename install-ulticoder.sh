@@ -2,14 +2,16 @@
 
 echo "Installing ulticoder"
 
+cd $HOME
+
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install aptitude
 sudo apt-get install git 
 
-sudo git clone https://github.com/franciscojusto/domjudge.git
+#sudo git clone https://github.com/franciscojusto/domjudge.git
 
-sudo apt-get install gcc g++ make libcurl4-gnutls-dev mysql-server \
+sudo apt-get -y install gcc g++ make libcurl4-gnutls-dev mysql-server \
         apache2 php5 php5-cli libapache2-mod-php5 php5-mysql php5-json \
         php-geshi phpmyadmin \
         ntp sudo procps xsltproc \
@@ -17,11 +19,11 @@ sudo apt-get install gcc g++ make libcurl4-gnutls-dev mysql-server \
         transfig groff texlive-latex-recommended texlive-latex-extra \
         texlive-fonts-recommended
 
-sudo apt-get install make sudo php5-cli php5-mysql php5-common ntp xsltproc procps
+sudo apt-get -y install make sudo php5-cli php5-mysql php5-common ntp xsltproc procps
 
-sudo apt-get install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
+sudo apt-get -y install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
 
-sudo apt-get install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-info linuxdoc-tools-latex$
+sudo apt-get -y install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-info linuxdoc-tools-latex$
 
 echo "Entering to domjudge directory"
 cd domjudge
@@ -54,10 +56,10 @@ sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/ultico
 
 OLD="var/www"
 OLD="${OLD//\//\\/}"
-NEW="home/sang/domjudge/main-www"
+NEW="$HOME/domjudge/main-www"
 NEW="${NEW//\//\\/}"
 
-sed -i "s/${OLD}/${NEW}/g" /etc/apache2/sites-available/ulticodersite
+sudo sed -i "s/${OLD}/${NEW}/g" /etc/apache2/sites-available/ulticodersite
 
 sudo a2ensite ulticodersite
 sudo service apache2 restart
@@ -66,4 +68,3 @@ sudo a2dissite default
 sudo service apache2 restart
 
 sudo chmod 777 main-www/
-

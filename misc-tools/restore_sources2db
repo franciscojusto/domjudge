@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Generated from 'restore_sources2db.in' on Thu Jan  9 10:15:58 EST 2014.
+ * Generated from 'restore_sources2db.in' on Fri Jan 10 14:26:37 EST 2014.
  *
  * Program to rebuild the DB submissions table from submitted sources
  * on the filesystem. Can be useful in case of a database crash.
