@@ -9,7 +9,7 @@ sudo apt-get install git
 
 sudo git clone https://github.com/franciscojusto/domjudge.git
 
-apt-get install gcc g++ make libcurl4-gnutls-dev mysql-server \
+sudo apt-get install gcc g++ make libcurl4-gnutls-dev mysql-server \
         apache2 php5 php5-cli libapache2-mod-php5 php5-mysql php5-json \
         php-geshi phpmyadmin \
         ntp sudo procps xsltproc \
@@ -17,9 +17,9 @@ apt-get install gcc g++ make libcurl4-gnutls-dev mysql-server \
         transfig groff texlive-latex-recommended texlive-latex-extra \
         texlive-fonts-recommended
 
-apt-get install make sudo php5-cli php5-mysql php5-common ntp xsltproc procps
+sudo apt-get install make sudo php5-cli php5-mysql php5-common ntp xsltproc procps
 
-apt-get install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
+sudo apt-get install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
 
 sudo apt-get install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-info linuxdoc-tools-latex$
 
