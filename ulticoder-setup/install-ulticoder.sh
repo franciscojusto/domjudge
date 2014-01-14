@@ -17,7 +17,7 @@ sudo apt-get -y install make sudo php5-cli php5-curl php5-json procps \
 sudo apt-get -y install gcc g++ gcj openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler mono-gmcs
 
 # Submit client requirements
-sudo apt-get install libcurl4-gnutls-dev libjsoncpp-dev libmagic-dev
+sudo apt-get -y install libcurl4-gnutls-dev libjsoncpp-dev libmagic-dev
 
 sudo apt-get -y install gcc g++ make libcurl4-gnutls-dev mysql-server \
         apache2 php5 php5-cli libapache2-mod-php5 php5-mysql php5-json \
@@ -80,7 +80,7 @@ sudo chmod 777 main-www/
 
 # Install chroot
 cd ~/domjudge/judgehost/bin
-sudo sed -i 's/SCALAPKG=".*"/SCALAPKG="http://www.scala-lang.org/files/archive/scala-2.10.3.tgz"/g' dj_make_ubuntu_chroot
+sudo sed -i -e 's#SCALAPKG=".*"#SCALAPKG="http://www.scala-lang.org/files/archive/scala-2.10.3.tgz"#' dj_make_ubuntu_chroot
 sudo ./dj_make_ubuntu_chroot /chroot i386
 
 cd ~/domjudge/judgehost/etc/
