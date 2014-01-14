@@ -77,7 +77,24 @@ sudo service apache2 restart
 
 sudo chmod 777 main-www/
 
+#\\ configuring judgehosts \\
+#set chroot to false
+cd ~/domjudge/judgehost/etc/
+sudo sed -i -e "s#'USE_CHROOT', true#'USE_CHROOT', false#" judgehost-config.php
 
+#create the restapi.secret file
+#username: judgehosts
+#password: password
+#assume that the user has created the judgehost user with the following username#and password
+echo 'localhost/domjudge/api/ judgehosts password' | sudo tee -a restapi.secret
+
+#set the number of cores
+cd ~/domjudge/etc/
+sudo sed -i -e "s#cpuset.cpus = 0#cpuset.cpus = 0-2#" cgroup-domjudge.conf
+
+sudo ~/domjudge
+sudo service apache2 restart
+#\\ finish judgehosts \\
 # Cleanup
 rm ".ulticoder_system_updated" 2> /dev/null
 
