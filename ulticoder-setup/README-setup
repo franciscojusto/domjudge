@@ -1,8 +1,18 @@
-1. run the install-ulticoder.sh
-	$sudo ./install-ulticoder.sh
-2. through a browser check that the ulticoder is setup
+1. Run the install-ulticoder.sh
+	sudo ./install-ulticoder.sh
+2. Through a browser check that the ulticoder is setup
 	check localhost
-3. to setup auto-compile and grading, in a new terminal
-	navigate to ~/domjudge/judgehost/bin
-   and run
-	$sudo ./judgedaemon
+3. Login as admin, and create judgehosts user:
+	user: judgehosts
+	password: password
+	roles: (Internal/System) Judgehost
+4. To setup auto-compile and grading in background run
+	sudo ~/domjudge/judgehost/bin/judgedaemon&
+   type fg if it says stopped
+
+5. Enable desired languages in home/languages. currently tested are:
+	C, C#, Java, C++, Python, Ruby
+
+To start a contest:
+- home/contests, change start time
+- create a team member user to test out submission
