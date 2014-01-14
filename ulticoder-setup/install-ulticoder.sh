@@ -2,8 +2,6 @@
 
 echo "Installing ulticoder"
 
-cd $HOME
-
 # Speed up script, update only if necessary
 if [ ! -f ".ulticoder_system_updated" ]; then
   sudo apt-get update
@@ -16,7 +14,7 @@ fi
 sudo apt-get -y install make sudo php5-cli php5-curl php5-json procps \
 
 # Compilers
-sudo apt-get -y install gcc g++ gcj openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
+sudo apt-get -y install gcc g++ gcj openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler mono-gmcs
 
 # Submit client requirements
 sudo apt-get install libcurl4-gnutls-dev libjsoncpp-dev libmagic-dev
@@ -35,8 +33,7 @@ sudo apt-get -y install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-i
 
 sudo apt-get -y install libjsoncpp-dev
 
-sudo apt-get -y install mono-gmcs
-
+pushd $HOME
 git clone https://github.com/franciscojusto/domjudge.git
 
 echo "Entering to domjudge directory"
@@ -97,7 +94,9 @@ sudo sed -i -e "s#cpuset.cpus = 0#cpuset.cpus = 0-2#" cgroup-domjudge.conf
 sudo ~/domjudge
 sudo service apache2 restart
 #\\ finish judgehosts \\
+
 # Cleanup
+popd
 rm ".ulticoder_system_updated" 2> /dev/null
 
 echo "Install finished."
