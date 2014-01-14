@@ -1,0 +1,8 @@
+1. run the install-ulticoder.sh
+	$sudo ./install-ulticoder.sh
+2. through a browser check that the ulticoder is setup
+	check localhost
+3. to setup auto-compile and grading, in a new terminal
+	navigate to ~/domjudge/judgehost/bin
+   and run
+	$sudo ./judgedaemon
