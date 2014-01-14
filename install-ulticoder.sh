@@ -35,7 +35,7 @@ sudo apt-get -y install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-i
 
 sudo apt-get install libjsoncpp-dev
 
-sudo git clone https://github.com/franciscojusto/domjudge.git
+git clone https://github.com/franciscojusto/domjudge.git
 
 echo "Entering to domjudge directory"
 cd domjudge
