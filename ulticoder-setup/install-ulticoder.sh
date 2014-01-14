@@ -77,14 +77,23 @@ sudo service apache2 restart
 sudo chmod 777 main-www/
 
 #\\ configuring judgehosts \\
-#set chroot to false
+
+# Install chroot
+cd ~/domjudge/judgehost/bin
+sudo sed -i 's/SCALAPKG=".*"/SCALAPKG="http://www.scala-lang.org/files/archive/scala-2.10.3.tgz"/g' dj_make_ubuntu_chroot
+sudo ./dj_make_ubuntu_chroot /chroot i386
+
 cd ~/domjudge/judgehost/etc/
-sudo sed -i -e "s#'USE_CHROOT', true#'USE_CHROOT', false#" judgehost-config.php
+sudo sed -i -e "s#define('CHROOT_SCRIPT', '');#define('CHROOT_SCRIPT', 'chroot-startstop.sh');#" judgehost-config.php
+
+cd ~/domjudge/judgehost/lib/judge/
+sudo sed -i 's/CHROOTORIGINAL=".*"/CHROOTORIGINAL="\/chroot"/g' chroot-startstop.sh
 
 #create the restapi.secret file
 #username: judgehosts
 #password: password
 #assume that the user has created the judgehost user with the following username#and password
+cd ~/domjudge/judgehost/etc/
 echo 'localhost/domjudge/api/ judgehosts password' | sudo tee -a restapi.secret
 
 #set the number of cores
