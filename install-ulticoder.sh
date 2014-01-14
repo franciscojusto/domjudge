@@ -4,12 +4,22 @@ echo "Installing ulticoder"
 
 cd $HOME
 
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install aptitude
-sudo apt-get -y install git 
+# Speed up script, update only if necessary
+if [ ! -f ".ulticoder_system_updated" ]; then
+  sudo apt-get update
+  sudo apt-get -y upgrade
+  sudo apt-get -y install aptitude git curl
+  touch ".ulticoder_system_updated"
+fi
 
-sudo git clone https://github.com/franciscojusto/domjudge.git
+# Judgehost requirements
+sudo apt-get -y install make sudo php5-cli php5-curl php5-json procps \
+
+# Compilers
+sudo apt-get -y install gcc g++ gcj openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
+
+# Submit client requirements
+sudo apt-get install libcurl4-gnutls-dev libjsoncpp-dev libmagic-dev
 
 sudo apt-get -y install gcc g++ make libcurl4-gnutls-dev mysql-server \
         apache2 php5 php5-cli libapache2-mod-php5 php5-mysql php5-json \
@@ -21,9 +31,11 @@ sudo apt-get -y install gcc g++ make libcurl4-gnutls-dev mysql-server \
 
 sudo apt-get -y install make sudo php5-cli php5-mysql php5-common ntp xsltproc procps
 
-sudo apt-get -y install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler
-
 sudo apt-get -y install autoconf automake flex flexc++ bisonc++ linuxdoc-tools-info linuxdoc-tools-latex$
+
+sudo apt-get install libjsoncpp-dev
+
+sudo git clone https://github.com/franciscojusto/domjudge.git
 
 echo "Entering to domjudge directory"
 cd domjudge
@@ -38,11 +50,6 @@ sudo make judgehost
 sudo make install-judgehost
 sudo make docs
 sudo make install-docs
-
-sudo apt-get install libjsoncpp-dev
-
-#Add something
-#Sudo make submitclient
 
 sudo ./domserver/bin/dj-setup-database -u root -r install 
 
@@ -69,3 +76,10 @@ sudo service apache2 restart
 
 sudo chmod 777 main-www/
 
+#Add something
+#Sudo make submitclient
+
+# Cleanup
+rm ".ulticoder_system_updated" 2> /dev/null
+
+echo "Install finished."
