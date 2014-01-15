@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Attempt to get root permissions
+if [ $EUID != 0 ]; then
+    sudo "$0" "$@"
+    exit $?
+fi
+
+./judgehost/bin/judgedaemon&
