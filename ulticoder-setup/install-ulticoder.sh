@@ -95,12 +95,13 @@ sudo sed -i 's/CHROOTORIGINAL=".*"/CHROOTORIGINAL="\/chroot"/g' chroot-startstop
 #assume that the user has created the judgehost user with the following username#and password
 cd ~/domjudge/judgehost/etc/
 echo 'localhost/domjudge/api/ judgehosts password' | sudo tee -a restapi.secret
+sudo useradd -d /nonexistent -g nogroup -s /bin/false domjudge-run
 
 #set the number of cores
 cd ~/domjudge/etc/
 sudo sed -i -e "s#cpuset.cpus = 0#cpuset.cpus = 0-2#" cgroup-domjudge.conf
 
-sudo ~/domjudge
+sudo cd ~/domjudge
 sudo service apache2 restart
 #\\ finish judgehosts \\
 
