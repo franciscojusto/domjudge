@@ -1,13 +1,26 @@
 <?PHP
-require_once("./include/membersite_config.php");
+	require_once("./include/membersite_config.php");
+	require_once('./include/recaptchalib.php');
+	$privatekey = "6LfRDO0SAAAAAD67oBtIK6h9smNquEJy-5qQ6rTM";
+	$publickey = "6LfRDO0SAAAAAIjeXKU5-WSABoqfSVrswPh0SWdZ";
 
-if(isset($_POST['submitted']))
-{
-   if($fgmembersite->RegisterUser())
-   {
-        $fgmembersite->RedirectToURL("thank-you.html");
-   }
-}
+	if ($_POST['Submit']) {
+		$resp = recaptcha_check_answer ($privatekey,
+				$_SERVER["REMOTE_ADDR"],
+				$_POST["recaptcha_challenge_field"],
+				$_POST["recaptcha_response_field"]);
+
+		if (!$resp->is_valid) {
+			// What happens when the CAPTCHA was entered incorrectly
+			echo '<script language="javascript">';
+			echo 'alert("Invalid captcha")';
+			echo '</script>';
+		} else {
+			// Your code here to handle a successful verification
+			echo $fgmembersite->GetSelfScript();
+			$fgmembersite->RedirectToURL("thank-you.html");
+		}
+	}
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -24,7 +37,7 @@ if(isset($_POST['submitted']))
 
 <!-- Form Code Start -->
 <div id='fg_membersite'>
-<form id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+<form id='register' action='register.php' method='post' accept-charset='UTF-8'>
 <fieldset >
 <legend>Register</legend>
 
@@ -59,11 +72,15 @@ if(isset($_POST['submitted']))
 </div>
 
 <div class='container'>
+	<?php echo recaptcha_get_html($publickey); ?>
+</div>
+<div class='container'>
     <input type='submit' name='Submit' value='Submit' />
 </div>
 
 </fieldset>
 </form>
+
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
 
