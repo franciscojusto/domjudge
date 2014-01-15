@@ -101,7 +101,6 @@ sudo useradd -d /nonexistent -g nogroup -s /bin/false domjudge-run
 cd ~/domjudge/etc/
 sudo sed -i -e "s#cpuset.cpus = 0#cpuset.cpus = 0-2#" cgroup-domjudge.conf
 
-sudo cd ~/domjudge
 sudo service apache2 restart
 #\\ finish judgehosts \\
 
