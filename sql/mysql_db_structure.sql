@@ -433,8 +433,9 @@ CREATE TABLE `user` (
   `last_ip_address` varchar(255) DEFAULT NULL COMMENT 'Last IP address of successful login',
   `password` varchar(32) DEFAULT NULL COMMENT 'Password hash',
   `ip_address` varchar(255) DEFAULT NULL COMMENT 'IP Address used to autologin',
-  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT 'Whether the user is able to log in',
+  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT 'Whether the user is able to log in',\ 
   `teamid` varchar(15) DEFAULT NULL COMMENT 'Team associated with',
+  `comfirmcode` varchar(32) DEFAULT NULL COMMENT 'Email comfirmation code',
   PRIMARY KEY (`userid`),
   UNIQUE KEY `username` (`username`),
   KEY `teamid` (`teamid`),

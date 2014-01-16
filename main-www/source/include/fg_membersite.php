@@ -827,7 +827,7 @@ class FGMembersite
                 "' . $this->SanitizeForSQL($formvars['email']) . '",
                 NULL,
 		NULL,
-		"' . md5($formvars['password']) . '",
+		"' . md5($formvars['username'].'#'.$formvars['password']) . '",
                 NULL,
 		"1",
 		NULL,
