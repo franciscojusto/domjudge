@@ -838,6 +838,12 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }        
+	$insert_query = 'insert into team (login, name, categoryid, enabled); values (
+			 "' . $this->SanitizeForSQL($formvars['username']) . '",
+			 "' . $this->SanitizeForSQL($formvars['username']) . '",
+			 2,
+			 1)';
+
         return true;
     }
     function MakeConfirmationMd5($email)
