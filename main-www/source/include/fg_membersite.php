@@ -809,19 +809,29 @@ class FGMembersite
         $formvars['confirmcode'] = $confirmcode;
         
         $insert_query = 'insert into '.$this->tablename.'(
+                username,
                 name,
                 email,
-                username,
-                password,
+                last_login,
+		last_ip_address,
+		password,
+		ip_address,
+		enabled,
+		teamid,
                 confirmcode
                 )
                 values
                 (
+                "' . $this->SanitizeForSQL($formvars['username']) . '",
                 "' . $this->SanitizeForSQL($formvars['name']) . '",
                 "' . $this->SanitizeForSQL($formvars['email']) . '",
-                "' . $this->SanitizeForSQL($formvars['username']) . '",
-                "' . md5($formvars['password']) . '",
-                "' . $confirmcode . '"
+                NULL,
+		NULL,
+		"' . md5($formvars['password']) . '",
+                NULL,
+		"1",
+		NULL,
+		"' . $confirmcode . '"
                 )';      
         if(!mysql_query( $insert_query ,$this->connection))
         {

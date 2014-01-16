@@ -18,7 +18,7 @@ $fgmembersite->InitDB(/*hostname*/'localhost',
 			$p_dbusername,
 			$p_dbpassword,
                       /*database name*/'domjudge',
-                      /*table name*/'test_registration');
+                      /*table name*/'user');
 
 //For better security. Get a random string from this link: http://tinyurl.com/randstr
 // and put it here
