@@ -14,7 +14,7 @@ fi
 sudo apt-get -y install make sudo php5-cli php5-curl php5-json procps \
 
 # Compilers
-sudo apt-get -y install gcc g++ gcj openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler mono-gmcs
+sudo apt-get -y install gcc g++ openjdk-6-jre-headless openjdk-6-jdk ghc fp-compiler mono-gmcs
 
 # Submit client requirements
 sudo apt-get -y install libcurl4-gnutls-dev libjsoncpp-dev libmagic-dev
