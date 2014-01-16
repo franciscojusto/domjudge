@@ -23,6 +23,8 @@ require_once("class.smtp.php");
 require_once("formvalidator.php");
 require_once("private_config.php");
 
+ini_set('display_errors', 'On');
+
 class FGMembersite
 {
     var $admin_email;
@@ -838,11 +840,36 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }        
-	$insert_query = 'insert into team (login, name, categoryid, enabled); values (
+	$ret_userid = mysql_insert_id($this->connection);
+
+	// Autocreate team and userrole
+	$insert_query = 'insert into team (login, name, categoryid, enabled) values (
 			 "' . $this->SanitizeForSQL($formvars['username']) . '",
 			 "' . $this->SanitizeForSQL($formvars['username']) . '",
 			 2,
 			 1)';
+        if(!mysql_query( $insert_query ,$this->connection))
+        {
+            $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
+            return false;
+        }        
+	$insert_query = 'insert into userrole (userid, roleid) values ('
+			 . $ret_userid . ','
+			 . 3 . ')';
+        if(!mysql_query( $insert_query ,$this->connection))
+        {
+            $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
+            return false;
+        }  
+	$insert_query = 'update user set teamid= 
+			"' . $this->SanitizeForSQL($formvars['username']) . '"
+			 where username=
+			"' . $this->SanitizeForSQL($formvars['username']) . '"';
+	if(!mysql_query( $insert_query ,$this->connection))
+        {
+            $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
+            return false;
+        }  
 
         return true;
     }
