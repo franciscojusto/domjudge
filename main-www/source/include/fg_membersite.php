@@ -21,6 +21,7 @@ http://www.html-form-guide.com/php-form/php-login-form.html
 require_once("class.phpmailer.php");
 require_once("class.smtp.php");
 require_once("formvalidator.php");
+require_once("private_config.php");
 
 class FGMembersite
 {
@@ -39,6 +40,7 @@ class FGMembersite
     //-----Initialization -------
     function FGMembersite()
     {
+	// to be replaced
         $this->sitename = 'YourWebsiteName.com';
         $this->rand_key = '0iQx5oBk66oVZep';
     }
@@ -621,6 +623,8 @@ class FGMembersite
     
     function SendUserConfirmationEmail(&$formvars)
     {
+	global $p_email;
+	global $p_emailpassword;
 	$mailer = new PHPMailer(); // create a new object
 	$mailer->IsSMTP(); // enable SMTP
 	$mailer->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -629,8 +633,8 @@ class FGMembersite
 	$mailer->Host = "smtp.gmail.com";
 	$mailer->Port = 465;
 	$mailer->IsHTML(true);
-	$mailer->Username = "ulticoderproject@gmail.com";
-	$mailer->Password = "ultimatesoftware2013";
+	$mailer->Username = "$p_email";
+	$mailer->Password = "$p_emailpassword";
 
         $mailer->AddAddress($formvars['email'],$formvars['name']);
 

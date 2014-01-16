@@ -3,6 +3,6 @@
 git rm -r --cached .
 git add .
 git clean -fdX
-mysql -uroot -ppassword -e 'drop schema `domjudge`'
-mysql -uroot -ppassword -e 'drop user `domjudge`'
-mysql -uroot -ppassword -e 'drop user `domjudge`@`localhost`'
+mysql -uroot -p -e 'drop schema `domjudge`'
+mysql -uroot -p -e 'drop user `domjudge`'
+mysql -uroot -p -e 'drop user `domjudge`@`localhost`'

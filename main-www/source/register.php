@@ -1,8 +1,7 @@
 <?PHP
 	require_once("./include/membersite_config.php");
 	require_once('./include/recaptchalib.php');
-	$privatekey = "6LfRDO0SAAAAAD67oBtIK6h9smNquEJy-5qQ6rTM";
-	$publickey = "6LfRDO0SAAAAAIjeXKU5-WSABoqfSVrswPh0SWdZ";
+	require_once('./include/private_config.php');
 
 	if ($_POST['Submit']) {
 		$resp = recaptcha_check_answer ($privatekey,
@@ -17,8 +16,10 @@
 			echo '</script>';
 		} else {
 			// Your code here to handle a successful verification
-			echo $fgmembersite->GetSelfScript();
-			$fgmembersite->RedirectToURL("thank-you.html");
+			if($fgmembersite->RegisterUser())
+			{
+				$fgmembersite->RedirectToURL("thank-you.html");
+			}
 		}
 	}
 
@@ -37,7 +38,7 @@
 
 <!-- Form Code Start -->
 <div id='fg_membersite'>
-<form id='register' action='register.php' method='post' accept-charset='UTF-8'>
+<form id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
 <fieldset >
 <legend>Register</legend>
 
