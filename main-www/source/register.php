@@ -9,7 +9,7 @@
 				$_POST["recaptcha_challenge_field"],
 				$_POST["recaptcha_response_field"]);
 
-		if (!$resp->is_valid) {
+		if (false && !$resp->is_valid) {
 			// What happens when the CAPTCHA was entered incorrectly
 			echo '<script language="javascript">';
 			echo 'alert("Invalid captcha")';

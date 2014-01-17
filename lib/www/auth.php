@@ -311,9 +311,11 @@ function do_login_native($user, $pass)
 {
 	global $DB, $userdata, $username;
 
+	$password = $user."#".$pass;
+	$salt = sha1(md5($password));
 	$userdata = $DB->q('MAYBETUPLE SELECT * FROM user
 			    WHERE username = %s AND password = %s',
-			   $user, md5($user."#".$pass));
+			   $user, md5($salt.$password));
 
 	if ( !$userdata ) {
 		sleep(1);
