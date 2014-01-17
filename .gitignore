@@ -9,6 +9,7 @@ bin/
 output/
 judgehost/
 domserver/
+logs/
 cov-int
 domjudge-scan.tgz
 *.o

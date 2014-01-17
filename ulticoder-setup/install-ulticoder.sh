@@ -104,6 +104,10 @@ sudo sed -i -e "s#cpuset.cpus = 0#cpuset.cpus = 0-2#" cgroup-domjudge.conf
 sudo service apache2 restart
 #\\ finish judgehosts \\
 
+#Extra chroot setup
+sudo chroot /chroot apt-get install -y ruby1.8 ruby1.8-dev irb rdoc ri
+sudo chroot /chroot useradd -d /nonexistent -g nogroup -s /bin/false domjudge-run
+
 # Cleanup
 popd
 rm ".ulticoder_system_updated" 2> /dev/null

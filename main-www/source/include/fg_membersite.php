@@ -23,8 +23,6 @@ require_once("class.smtp.php");
 require_once("formvalidator.php");
 require_once("private_config.php");
 
-ini_set('display_errors', 'On');
-
 class FGMembersite
 {
     var $admin_email;
