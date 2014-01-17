@@ -597,7 +597,7 @@ class FGMembersite
         $validator->addValidation("email","req","Please fill in Email");
         $validator->addValidation("username","req","Please fill in UserName");
         $validator->addValidation("password","req","Please fill in Password");
-
+        $validator->addValidation("password2","req","Please fill in Password");
         
         if(!$validator->ValidateForm())
         {
@@ -619,6 +619,7 @@ class FGMembersite
         $formvars['email'] = $this->Sanitize($_POST['email']);
         $formvars['username'] = $this->Sanitize($_POST['username']);
         $formvars['password'] = $this->Sanitize($_POST['password']);
+        $formvars['password2'] = $this->Sanitize($_POST['password2']);
     }
     
     function SendUserConfirmationEmail(&$formvars)
@@ -726,7 +727,12 @@ class FGMembersite
         {
             $this->HandleError("This UserName is already used. Please try another username");
             return false;
-        }        
+        }
+	if($formvars['password'] != $formvars['password2'])
+	{
+	    $this->HandleError("Password do not match. Please re-enter your password");
+	    return false;
+	}        
         if(!$this->InsertIntoDB($formvars))
         {
             $this->HandleError("Inserting to Database failed!");
