@@ -317,10 +317,18 @@ function do_login_native($user, $pass)
 			    WHERE username = %s AND password = %s',
 			   $user, md5($salt.$password));
 
-	if ( !$userdata || $userdata['enabled']!='1') {
+	if ( !$userdata ) {
 		sleep(1);
 		show_failed_login("Invalid username or password supplied. " .
 				  "Please try again or contact a staff member.");
+	} else if ( $userdata['enabled']!='1' ) {
+		sleep(1);
+		show_failed_login("Your account has been disabled. " .
+				  "Contact your administrator for details.");
+	} else if ( !($userdata['confirmcode'] == NULL || $userdata['confirmcode'] == 'y') ) {
+		sleep(1);
+		show_failed_login("Your account has not been activated yet. " .
+				  "Please check your email for an activation link.");
 	}
 
 	$username = $userdata['username'];
