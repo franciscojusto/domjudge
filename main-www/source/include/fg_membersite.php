@@ -730,7 +730,7 @@ class FGMembersite
         }
 	if($formvars['password'] != $formvars['password2'])
 	{
-	    $this->HandleError("Password entered are not the same. Please re-enter your password");
+	    $this->HandleError("Password do not match. Please re-enter your password");
 	    return false;
 	}        
         if(!$this->InsertIntoDB($formvars))
