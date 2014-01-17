@@ -40,7 +40,10 @@ function check_user($data, $keydata = null)
 		$password = $id."#".$data['password'];
 		$salt = sha1(md5($password));
 		$data['password'] = md5($salt.$password);
+	} else {
+		$data['password'] = $data['oldpassword'];
 	}
+	unset($data['oldpassword']);
 	return $data;
 }
 

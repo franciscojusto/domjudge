@@ -54,7 +54,12 @@ if ( !empty($row['password']) ) {
 	echo "<em>set</em>";
 } else {
 	echo "<em>not set</em>";
-} ?> - to change: <?php echo addInputField('password', 'data[0][password]', "", ' size="19" maxlength="255"')?></td></tr>
+} ?> - to change:
+<?php 
+	echo addInputField('password', 'data[0][password]', "", ' size="19" maxlength="255"'); 	
+        echo addHidden('data[0][oldpassword]', $row['password']);
+?>
+</td></tr>
 <tr><td><label for="data_0__ip_address_">IP Address:</label></td>
 <td><?php echo addInput('data[0][ip_address]', @$row['ip_address'], 35, 255)?></td></tr>
 
