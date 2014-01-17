@@ -807,7 +807,9 @@ class FGMembersite
         $confirmcode = $this->MakeConfirmationMd5($formvars['email']);
         
         $formvars['confirmcode'] = $confirmcode;
-        
+       
+	$password = $formvars['username'].'#'.$formvars['password'];
+	$salt = sha1(md5($password)); 
         $insert_query = 'insert into '.$this->tablename.'(
                 username,
                 name,
@@ -827,7 +829,7 @@ class FGMembersite
                 "' . $this->SanitizeForSQL($formvars['email']) . '",
                 NULL,
 		NULL,
-		"' . md5($formvars['username'].'#'.$formvars['password']) . '",
+		"' . md5($salt.$password) . '",
                 NULL,
 		"1",
 		NULL,
