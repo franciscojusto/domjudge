@@ -4,9 +4,21 @@
 	<meta charset="utf-8">
 	<title>Welcome to Ulticoder!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
 	<script src="jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="jqueryui/js/jquery-ui-1.10.3.custom.js"></script>		
+	<script>
+		$(function() {
+		 	$( "#accordion" ).accordion();
+		 	$( ".selector" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
+			    var icons = {
+			      header: "ui-icon-circle-arrow-e",
+			      activeHeader: "ui-icon-circle-arrow-s"
+			    };
+			    $( "#accordion" ).accordion({ icons: icons });
+			  });
+	</script>
 </head>
 <body>
 
@@ -20,7 +32,7 @@
 		<form action="index.html">
     		<input type="submit" value="Home">
 		</form>
-		<form action="rules.html">
+		<form action="#">
     		<input type="submit" value="Contest Rules">
 		</form>
 		<form action="FAQ.html">
@@ -42,15 +54,20 @@
 
 	</div>
 
-		<div id="textbody" class="childelem"><h2>What is UltiCoder?</h2> &nbsp;&nbsp;&nbsp; Beginning in 2013, UltiCoder is an initiative by Ultimate Software to bring together some of the brightest minds in computer science, solving tough problems and posing the best solutions as they compete against each other. Several programming languages are supported, and the top performers will receive prizes for their work.<h2>Who are we?</h2> &nbsp;&nbsp;&nbsp; Here at Ultimate Software we are a team of professionals dedicated to putting our customers first, always. Our sophisticated cloud management lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor egestas massa, at porttitor enim. Quisque sed blandit lorem. Vivamus eget consectetur nisl, a mollis magna. Maecenas non quam interdum, malesuada purus a, consectetur magna. Find out more about us by clicking  <a href="#"> here </a></div> 
+		<div class="childelem" style="float:left;padding-top:2%">
+<pre>
+		Specs:
+		compile time: 30 seconds
+		memory limit: 524288KB, 512MB (includes JavaVM, which is like 300MB
+		output file size limit: 4096KB (filesize_limit)
+		source file size limit: 256KB
+                source file #files: 1
 
-		<div id="vidplayer" class="childelem">
-
-		<video width="370" height="277.5" controls>
-		  <source src="outtakes.mp4" type="video/mp4">\
-		  Your browser does not support the video tag.
-		</video>
-
+		time limit: depends on problem, ~5 seconds usually
+		java has 1.5x extra time
+		
+		time penalty on wrong submission: 20min
+</pre>
 		</div>
 
 
