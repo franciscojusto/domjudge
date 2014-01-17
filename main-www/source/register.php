@@ -9,7 +9,7 @@
 				$_POST["recaptcha_challenge_field"],
 				$_POST["recaptcha_response_field"]);
 
-		if (false && !$resp->is_valid) {
+		if (!$resp->is_valid) {
 			// What happens when the CAPTCHA was entered incorrectly
 			echo '<script language="javascript">';
 			echo 'alert("Invalid captcha")';
@@ -63,7 +63,7 @@
     <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>
     <span id='register_username_errorloc' class='error'></span>
 </div>
-<div class='container' style='height:80px;'>
+<div class='container'>
     <label for='password' >Password*:</label><br/>
     <div class='pwdwidgetdiv' id='thepwddiv' ></div>
     <noscript>
@@ -71,7 +71,11 @@
     </noscript>    
     <div id='register_password_errorloc' class='error' style='clear:both'></div>
 </div>
-
+<div class='container'>
+    <label for='password2' >Re-enter password*:</label><br/>
+    <input type='password' name='password2' id='password2' maxlength="50"/>
+    <div id='register_password2_errorloc' class='error' style='clear:both'></div>
+</div>
 <div class='container'>
 	<?php echo recaptcha_get_html($publickey); ?>
 </div>
@@ -89,7 +93,7 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 // <![CDATA[
     var pwdwidget = new PasswordWidget('thepwddiv','password');
     pwdwidget.MakePWDWidget();
-    
+
     var frmvalidator  = new Validator("register");
     frmvalidator.EnableOnPageErrorDisplay();
     frmvalidator.EnableMsgsTogether();
@@ -102,7 +106,8 @@ Uses the excellent form validation script from JavaScript-coder.com-->
     frmvalidator.addValidation("username","req","Please provide a username");
     
     frmvalidator.addValidation("password","req","Please provide a password");
-
+    
+    frmvalidator.addValidation("password2","req","Please re-enter the password");
 // ]]>
 </script>
 
