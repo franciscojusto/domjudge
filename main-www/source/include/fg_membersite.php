@@ -334,6 +334,10 @@ class FGMembersite
     
     function GetFromAddress()
     {
+	// TODO change
+	if (isset($p_from_email_override))
+	    return $p_from_email_override;
+
         if(!empty($this->from_address))
         {
             return $this->from_address;
@@ -624,17 +628,17 @@ class FGMembersite
     
     function SendUserConfirmationEmail(&$formvars)
     {
-	global $p_email;
+	global $p_emailuser;
 	global $p_emailpassword;
 	$mailer = new PHPMailer(); // create a new object
 	$mailer->IsSMTP(); // enable SMTP
 	$mailer->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 	$mailer->SMTPAuth = true; // authentication enabled
-	$mailer->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
-	$mailer->Host = "smtp.gmail.com";
-	$mailer->Port = 465;
-	$mailer->IsHTML(true);
-	$mailer->Username = "$p_email";
+	//$mailer->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
+	$mailer->Host = "smtp.postmarkapp.com"; // smtp.gmail.com";
+	$mailer->Port = 25;
+	$mailer->IsHTML(false);
+	$mailer->Username = "$p_emailuser";
 	$mailer->Password = "$p_emailpassword";
 
         $mailer->AddAddress($formvars['email'],$formvars['name']);
@@ -647,8 +651,8 @@ class FGMembersite
 
         $confirm_url = $this->GetAbsoluteURLFolder().'/confirmreg.php?code='.$confirmcode;
 
-        $mailer->Body ="Hello ".$formvars['name']."\r\n\r\n".
-        "Thanks for your registration with ".$this->sitename."\r\n".
+        $mailer->Body ="Hello ".$formvars['name'].",\r\n\r\n".
+        "Thanks for your registration with ".$this->sitename.".\r\n".
         "Please click the link below to confirm your registration.\r\n".
         "$confirm_url\r\n".
         "\r\n".
