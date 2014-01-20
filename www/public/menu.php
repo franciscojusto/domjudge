@@ -1,5 +1,5 @@
 <nav><div id="menutop">
-<a href="../../index.html" accesskey="h">home</a>
+<a href="../../index.php" accesskey="h">home</a>
 <a href="index.php" accesskey="h">contest home</a>
 <?php
 if ( have_problemtexts() ) {
