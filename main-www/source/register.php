@@ -96,14 +96,16 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 
     var frmvalidator  = new Validator("register");
     frmvalidator.EnableOnPageErrorDisplay();
-    frmvalidator.EnableMsgsTogether();
+    frmvalidator.EnableMsgsTogether(); 
     frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("name","name","Please provide a valid name");
 
     frmvalidator.addValidation("email","req","Please provide your email address");
 
     frmvalidator.addValidation("email","email","Please provide a valid email address");
 
     frmvalidator.addValidation("username","req","Please provide a username");
+    frmvalidator.addValidation("username","alnum","Username may only consist of letters and/or numbers");
     
     frmvalidator.addValidation("password","req","Please provide a password");
     

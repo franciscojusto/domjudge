@@ -48,7 +48,8 @@ define("E_VAL_ALNUM_S_CHECK_FAILED","Please provide an alpha-numeric input for %
 define("E_VAL_NUM_CHECK_FAILED","Please provide numeric input for %s");
 define("E_VAL_ALPHA_CHECK_FAILED","Please provide alphabetic input for %s");
 define("E_VAL_ALPHA_S_CHECK_FAILED","Please provide alphabetic input for %s");
-define("E_VAL_EMAIL_CHECK_FAILED","Please provide a valida email address");
+define("E_VAL_EMAIL_CHECK_FAILED","Please provide a valide email address");
+define("E_VAL_NAME_CHECK_FAILED","Please provide a valide name");
 define("E_VAL_LESSTHAN_CHECK_FAILED","Enter a value less than %f for %s");
 define("E_VAL_GREATERTHAN_CHECK_FAILED","Enter a value greater than %f for %s");
 define("E_VAL_REGEXP_CHECK_FAILED","Please provide a valid input for %s");
@@ -57,7 +58,6 @@ define("E_VAL_SELMIN_CHECK_FAILED","Please select minimum %d options for %s");
 define("E_VAL_SELONE_CHECK_FAILED","Please select an option for %s");
 define("E_VAL_EQELMNT_CHECK_FAILED","Value of %s should be same as that of %s");
 define("E_VAL_NEELMNT_CHECK_FAILED","Value of %s should not be same as that of %s");
-
 
 
 /**
@@ -230,6 +230,11 @@ class FormValidator
 			return false;
 		}
 		return true;
+	}
+
+	function validate_name($name)
+	{
+		return preg_match("/^[a-zA-Z]+( [a-zA-Z][a-zA-Z]+)*$/i", $name);
 	}
 
 	function validate_email($email) 
@@ -436,6 +441,19 @@ class FormValidator
 								$default_error_message = sprintf(E_VAL_ALPHA_S_CHECK_FAILED,$variable_name);
 							}
 							break;
+						}
+			case 'name' :
+						{
+							if(isset($input_value) && strlen($input_value)>0)
+							{
+                                                                $bret= $this->validate_name($input_value);
+                                                                if(false == $bret)
+                                                                {
+                                                                        $default_error_message = E_VAL_NAME_CHECK_FAILED;
+                                                                }
+                                                        }
+                                                        break;
+
 						}
 			case 'email':
 						{
