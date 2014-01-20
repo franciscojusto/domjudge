@@ -645,7 +645,8 @@ class FGMembersite
 
         $mailer->From = $this->GetFromAddress();        
 
-        $confirmcode = $formvars['confirmcode'];
+        $confirmcode = $this->MakeConfirmationMd5($formvars['email']);
+        $formvars['confirmcode'] = $confirmcode;
 
         $confirm_url = $this->GetAbsoluteURLFolder().'/confirmreg.php?code='.$confirmcode;
 
@@ -812,9 +813,7 @@ class FGMembersite
     function InsertIntoDB(&$formvars)
     {
     
-        $confirmcode = $this->MakeConfirmationMd5($formvars['email']);
-        
-        $formvars['confirmcode'] = $confirmcode;
+        $confirmcode = $formvars['confirmcode'];
        
 	$password = $formvars['username'].'#'.$formvars['password'];
 	$salt = sha1(md5($password)); 
