@@ -381,6 +381,12 @@ function validateEmail(email)
 return false;
 }
 
+function validateName(name)
+{	
+	var regexp=/^[a-zA-Z]+( [a-zA-Z][a-zA-Z]+)*$/;
+	return name.match(regexp);
+}
+
 function IsCheckSelected(objValue,chkValue)
 {
     var selected=false;
@@ -505,6 +511,22 @@ function TestInputType(objValue,strRegExp,strError,strDefaultError)
     }//if 
  return ret;
 }
+
+function TestName(objValue,strError)
+{
+var ret = true;
+     if(objValue.value.length > 0 && !validateName(objValue.value)   )
+     {
+       if(!strError || strError.length ==0)
+       {
+          strError = objValue.name+": Enter a valid name";
+     }//if                                               
+       sfm_show_error_msg(strError,objValue);
+       ret = false;
+     }//if 
+return ret;
+}
+
 function TestEmail(objValue,strError)
 {
 var ret = true;
@@ -724,6 +746,11 @@ function validateInput(strValidateStr,objValue,strError)
                   objValue.name+": Only alphabetic characters and space allowed ");
                 break; 
            }
+	case "name":
+	  {
+	    ret = TestName(objValue,strError);
+	    break;	
+	  }
         case "email": 
           { 
             ret = TestEmail(objValue,strError);
