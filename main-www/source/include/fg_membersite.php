@@ -86,12 +86,12 @@ class FGMembersite
         
         $this->CollectRegistrationSubmission($formvars);
         
-        if(!$this->SaveToDatabase($formvars))
+        if(!$this->SendUserConfirmationEmail($formvars))
         {
             return false;
         }
         
-        if(!$this->SendUserConfirmationEmail($formvars))
+        if(!$this->SaveToDatabase($formvars))
         {
             return false;
         }

@@ -89,7 +89,7 @@ class SMTP
      * Options: 'echo', 'html' or 'error_log'
      * @type string
      */
-    public $Debugoutput = 'echo';
+    public $Debugoutput = 'error_log';
 
     /**
      * Whether to use VERP.
