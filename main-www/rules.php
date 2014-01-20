@@ -24,35 +24,7 @@
 
 <div id="container">
 
-	<div id="topnav">
-		<img src="logo.png" id="logo" alt="logo image" style="float:left;" />
-		<h2 id="catchy">the Ultimate coding competition</h2> 
-
-		<p>
-		<form action="index.html">
-    		<input type="submit" value="Home">
-		</form>
-		<form action="#">
-    		<input type="submit" value="Contest Rules">
-		</form>
-		<form action="FAQ.html">
-    		<input type="submit" value="FAQ">
-		</form>
-		<form action="source/register.php">
-    		<input type="submit" value="Registration">
-		</form>
-		<form action="#">
-    		<input type="submit" value="Contact Us">
-		</form>
-		<form action="https://myrec.ultimatesoftware.com/usg1006/JobBoard/Default.aspx">
-    		<input type="submit" value="Internship Opportunities">
-		</form>
-		<form action="domjudge/public/">
-    		<input type="submit" value="Go to contest">
-		</form>
-		</p>
-
-	</div>
+	<?php include("topnav.html"); ?>
 
 		<div class="childelem" style="float:left;padding-top:2%">
 <pre>

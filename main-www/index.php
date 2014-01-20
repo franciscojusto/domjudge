@@ -12,35 +12,7 @@
 
 <div id="container">
 
-	<div id="topnav">
-		<img src="logo.png" id="logo" alt="logo image" style="float:left;" />
-		<h2 id="catchy">the Ultimate coding competition</h2> 
-
-		<p>
-		<form action="index.html">
-    		<input type="submit" value="Home">
-		</form>
-		<form action="rules.html">
-    		<input type="submit" value="Contest Rules">
-		</form>
-		<form action="FAQ.html">
-    		<input type="submit" value="FAQ">
-		</form>
-		<form action="source/register.php">
-    		<input type="submit" value="Registration">
-		</form>
-		<form action="#">
-    		<input type="submit" value="Contact Us">
-		</form>
-		<form action="https://myrec.ultimatesoftware.com/usg1006/JobBoard/Default.aspx">
-    		<input type="submit" value="Internship Opportunities">
-		</form>
-		<form action="domjudge/public/">
-    		<input type="submit" value="Go to contest">
-		</form>
-		</p>
-
-	</div>
+	<?php include("topnav.html"); ?>
 
 		<div id="textbody" class="childelem"><h2>What is UltiCoder?</h2> &nbsp;&nbsp;&nbsp; Beginning in 2013, UltiCoder is an initiative by Ultimate Software to bring together some of the brightest minds in computer science, solving tough problems and posing the best solutions as they compete against each other. Several programming languages are supported, and the top performers will receive prizes for their work.<h2>Who are we?</h2> &nbsp;&nbsp;&nbsp; Here at Ultimate Software we are a team of professionals dedicated to putting our customers first, always. Our sophisticated cloud management lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor egestas massa, at porttitor enim. Quisque sed blandit lorem. Vivamus eget consectetur nisl, a mollis magna. Maecenas non quam interdum, malesuada purus a, consectetur magna. Find out more about us by clicking  <a href="#"> here </a></div> 
 
