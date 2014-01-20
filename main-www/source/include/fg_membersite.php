@@ -335,6 +335,7 @@ class FGMembersite
     function GetFromAddress()
     {
 	// TODO change
+	global $p_from_email_override;
 	if (isset($p_from_email_override))
 	    return $p_from_email_override;
 

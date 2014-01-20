@@ -49,3 +49,4 @@ if ( isset($refresh) ) {
 }
 
 echo "</div></nav>\n";
+?>

@@ -1,8 +1,9 @@
+<nav><div id="menutop">
+<a href="../../index.php" accesskey="h">home</a>
+<a href="index.php" accesskey="h">contest home</a>
+<a target="_top" href="index.php" accesskey="o">overview</a>
+
 <?php
-
-echo "<nav><div id=\"menutop\">\n";
-
-echo "<a target=\"_top\" href=\"index.php\" accesskey=\"o\">overview</a>\n";
 
 if ( have_problemtexts() ) {
 	echo "<a target=\"_top\" href=\"problem.php\" accesskey=\"t\">problems</a>\n";
@@ -22,3 +23,4 @@ echo "</div>\n\n<div id=\"menutopright\">\n";
 putClock();
 
 echo "</div></nav>\n\n";
+?>
