@@ -130,6 +130,7 @@ function show_failed_login($msg)
 	</table>
 	</form>
 	<?
+	putDOMjudgeVersion();
 	require(LIBWWWDIR . '/footer.php');
 	exit;
 }
