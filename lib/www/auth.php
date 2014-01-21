@@ -120,6 +120,16 @@ function show_failed_login($msg)
 	header("HTTP/1.0 403 Forbidden");
 	require(LIBWWWDIR . '/header.php');
 	echo "<h1>Not Authenticated</h1>\n\n<p>$msg</p>\n\n";
+	?>
+	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+	<input type="hidden" name="cmd" value="login" />
+	<table>
+	<tr><td><label for="login">Login:</label></td><td><input type="text" id="login" name="login" value="" size="15" maxlength="15" accesskey="l" autofocus /></td></tr>
+	<tr><td><label for="passwd">Password:</label></td><td><input type="password" id="passwd" name="passwd" value="" size="15" maxlength="255" accesskey="p" /></td></tr>
+	<tr><td></td><td><input type="submit" value="Login" /></td></tr>
+	</table>
+	</form>
+	<?
 	require(LIBWWWDIR . '/footer.php');
 	exit;
 }
@@ -236,6 +246,7 @@ function do_login()
 
 		if ( empty($user) || empty($pass) ) {
 			show_failed_login("Please supply a username and password.");
+			
 		}
 		do_login_native($user, $pass);
 
@@ -317,18 +328,10 @@ function do_login_native($user, $pass)
 			    WHERE username = %s AND password = %s',
 			   $user, md5($salt.$password));
 
-	if ( !$userdata ) {
+	if ( !$userdata || $userdata['enabled']!='1') {
 		sleep(1);
 		show_failed_login("Invalid username or password supplied. " .
 				  "Please try again or contact a staff member.");
-	} else if ( $userdata['enabled']!='1' ) {
-		sleep(1);
-		show_failed_login("Your account has been disabled. " .
-				  "Contact your administrator for details.");
-	} else if ( !($userdata['confirmcode'] == NULL || $userdata['confirmcode'] == 'y') ) {
-		sleep(1);
-		show_failed_login("Your account has not been activated yet. " .
-				  "Please check your email for an activation link.");
 	}
 
 	$username = $userdata['username'];
