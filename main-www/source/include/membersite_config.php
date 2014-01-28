@@ -8,7 +8,7 @@ $fgmembersite = new FGMembersite();
 $fgmembersite->SetWebsiteName('Ulticoder');
 
 //Provide the email address where you want to get notifications
-$fgmembersite->SetAdminEmail($p_email);
+$fgmembersite->SetAdminEmail($p_admin_email);
 
 //Provide your database login details here:
 //hostname, user name, password, database name and table name
