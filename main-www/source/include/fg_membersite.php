@@ -86,15 +86,9 @@ class FGMembersite
         
         $this->CollectRegistrationSubmission($formvars);
         
-        if(!$this->SendUserConfirmationEmail($formvars))
-        {
-            return false;
-        }
-        
-        if(!$this->SaveToDatabase($formvars))
-        {
-            return false;
-        }
+        if(!$this->ValidateSaveToDatabase($formvars)) return false;
+        if(!$this->SendUserConfirmationEmail($formvars)) return false;
+        if(!$this->SaveToDatabase($formvars)) return false;
 
         $this->SendAdminIntimationEmail($formvars);
         
@@ -617,6 +611,12 @@ class FGMembersite
             $this->HandleError($error);
             return false;
         }        
+	if($formvars['password'] != $formvars['password2'])
+	{
+	    $this->HandleError("Password do not match. Please re-enter your password");
+	    return false;
+	}        
+        
         return true;
     }
     
@@ -714,7 +714,7 @@ class FGMembersite
         return true;
     }
     
-    function SaveToDatabase(&$formvars)
+    function ValidateSaveToDatabase(&$formvars)
     {
         if(!$this->DBLogin())
         {
@@ -736,11 +736,10 @@ class FGMembersite
             $this->HandleError("This UserName is already used. Please try another username");
             return false;
         }
-	if($formvars['password'] != $formvars['password2'])
-	{
-	    $this->HandleError("Password do not match. Please re-enter your password");
-	    return false;
-	}        
+	return true;
+    }
+
+    function SaveToDatabase(&$formvars) {
         if(!$this->InsertIntoDB($formvars))
         {
             $this->HandleError("Inserting to Database failed!");
