@@ -26,6 +26,7 @@
 
 	<?php include("topnav.html"); ?>
 
+    <div class="content">
 		<div class="childelem" style="float:left;padding-top:2%">
 <pre>
 		Specs:
@@ -42,6 +43,7 @@
 </pre>
 		</div>
 
+    </div>
 
 </div>
 

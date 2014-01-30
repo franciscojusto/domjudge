@@ -26,10 +26,9 @@
 
 	<?php include("topnav.html"); ?>
 
-		<div class="childelem" style="float:left;width:60%;padding-top:2%;padding-left:30%">
+    <div class="content">
 		<iframe src="source/register.php" style="overflow:hidden;height:1000px;width:100%" height="100%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-		</div>
-
+    </div>
 
 </div>
 

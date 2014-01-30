@@ -26,9 +26,9 @@
 
 	<?php include("topnav.html"); ?>
 
-		<div class="childelem" style="float:left;width:60%;padding-top:2%;padding-left:20%">
-		<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHJOSHJxMU5jaUtwOEJ1M2VvMWxNRlE6MA" style="overflow:hidden;height:1000px;width:100%" height="1000px" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-		</div>
+    <div class="content">
+		<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHJOSHJxMU5jaUtwOEJ1M2VvMWxNRlE6MA" style="overflow:hidden;height:800px;width:100%" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
 
 
 </div>
