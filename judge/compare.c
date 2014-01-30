@@ -130,7 +130,8 @@ int main(int argc, char **argv)
 }
 
 /* Calls 'diff' and returns whether progout and testout differ.
-   Set ignore_ws for ignoring whitespace differences. */
+   Set ignore_ws for ignoring whitespace differences. 
+   */
 int execdiff(int ignore_ws)
 {
 	int redir_fd[3];
@@ -144,7 +145,7 @@ int execdiff(int ignore_ws)
 	if ( ignore_ws ) {
 		cmdargs[0] = "-abBE";
 	} else {
-		cmdargs[0] = "-a";
+		cmdargs[0] = "-aBZ";
 	}
 	cmdargs[1] = "-U0";
 	cmdargs[2] = progout;
