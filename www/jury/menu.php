@@ -1,6 +1,7 @@
 <nav><div id="menutop">
 <a href="../../index.php" accesskey="h">home</a>
-<a href="index.php" accesskey="h">contest home</a>
+<a href="../public/index.php" accesskey="h">contest home</a>
+<a href="index.php" accesskey="h">overview</a>
 <?php	if ( checkrole('balloon') ) { ?>
 <a href="balloons.php" accesskey="b">balloons</a>
 <?php   } ?>

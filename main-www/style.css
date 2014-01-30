@@ -11,6 +11,15 @@ div#container {
 div#topnav {
 	width: 100%;
 }
+
+#menu a:link {color:#ffffff; }
+#menu a:visited {color:#ffffff; }
+#menu a:active {color:#ffffff; }
+#menu a:hover {color:#ffffff;background-color:#033A57; }
+#menu a:focus {color:#ffffff; }
+#menu	{background-color:#6B8BB3; clear:both; }
+#menu ul li {display:inline; margin:10px; border-left: 1px solid #333;}
+
 #catchy { padding-left: 20px;}
 iframe {
 	width:325px;
