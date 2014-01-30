@@ -6,4 +6,6 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
+mkdir -p logs
+
 ./judgehost/bin/judgedaemon &> logs/daemon.log &
