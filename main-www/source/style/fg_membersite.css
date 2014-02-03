@@ -84,13 +84,15 @@ border-radius: 10px;
 {
    margin-top:8px;
    margin-bottom: 10px;
+   display: block;
+   float: left;
 }
 #fg_membersite .container label {
     display: block;
     width: 200px;
     float: left;
 }
-#fg_membersite .container input {
+#fg_membersite .container .input {
     display: block;
     width: 200px;
     float: left;

@@ -854,7 +854,7 @@ class FGMembersite
 	$ret_userid = mysql_insert_id($this->connection);
 
 	// Autocreate team and userrole
-	$insert_query = 'insert into team (login, name, categoryid, enabled) values (
+	/*$insert_query = 'insert into team (login, name, categoryid, enabled) values (
 			 "' . $this->SanitizeForSQL($formvars['username']) . '",
 			 "' . $this->SanitizeForSQL($formvars['username']) . '",
 			 2,
@@ -863,7 +863,7 @@ class FGMembersite
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
-        }        
+        } */       
 	$insert_query = 'insert into userrole (userid, roleid) values ('
 			 . $ret_userid . ','
 			 . 3 . ')';
@@ -872,7 +872,7 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }  
-	$insert_query = 'update user set teamid= 
+	/*$insert_query = 'update user set teamid= 
 			"' . $this->SanitizeForSQL($formvars['username']) . '"
 			 where username=
 			"' . $this->SanitizeForSQL($formvars['username']) . '"';
@@ -880,7 +880,7 @@ class FGMembersite
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
-        }  
+        } */ 
 
         return true;
     }

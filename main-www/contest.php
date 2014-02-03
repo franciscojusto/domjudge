@@ -13,7 +13,14 @@
 	<?php include("topnav.html"); ?>
 
     <div class="content">
-		<iframe src="source/register.php" style="overflow:hidden;height:1000px;width:100%" height="100%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<fieldset>
+<legend>Contest</legend>
+<div class="center">
+<a href="domjudge/public" class="button">
+<input type="submit" value="Enter" style="width:40%;height:100px;" class="center peter-river-flat-button">
+</a>
+</div>
+</fieldset>
     </div>
 
 </div>

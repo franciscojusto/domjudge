@@ -40,7 +40,7 @@
 <div id='fg_membersite'>
 <form id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
 <fieldset >
-<legend>Register</legend>
+<legend>Registration</legend>
 
 <input type='hidden' name='submitted' id='submitted' value='1'/>
 
@@ -50,37 +50,53 @@
 <div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
 <div class='container'>
     <label for='name' >Your Full Name*: </label>
+	<div class="input">
     <input type='text' name='name' id='name' value='<?php echo $fgmembersite->SafeDisplay('name') ?>' maxlength="50" /><br/>
     <span id='register_name_errorloc' class='error'></span>
+	</div>
 </div>
 <div class='container'>
     <label for='email' >Email Address*:</label>
+	<div class="input">
     <input type='text' name='email' id='email' value='<?php echo $fgmembersite->SafeDisplay('email') ?>' maxlength="50" /><br/>
     <span id='register_email_errorloc' class='error'></span>
+	</div>
 </div>
 <div class='container'>
     <label for='username' >UserName*:</label>
+	<div class="input">
     <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>
     <span id='register_username_errorloc' class='error'></span>
+	</div>
 </div>
 <div class='container'>
     <label for='password' >Password*:</label>
+	<div class="input">
     <div class='pwdwidgetdiv' id='thepwddiv' ></div>
     <noscript>
     <input type='password' name='password' id='password' maxlength="50" />
     </noscript>    
     <div id='register_password_errorloc' class='error' style='clear:both'></div>
+	</div>
 </div>
 <div class='container'>
     <label for='password2' >Re-enter password*:</label>
+	<div class="input">
     <input type='password' name='password2' id='password2' maxlength="50"/>
     <div id='register_password2_errorloc' class='error' style='clear:both'></div>
+	</div>
 </div>
 <div class='container'>
+	<label style="visibility:hidden">.</label>
+	<div class="input">
 	<?php echo recaptcha_get_html($publickey); ?>
+	</div>
 </div>
 <div class='container'>
+	<label style="visibility:hidden">.</label>
+	<div class="input">
     <input type='submit' name='Submit' value='Submit' />
+	</div>
 </div>
 
 </fieldset>

@@ -10,7 +10,9 @@
 	<script src="jqueryui/js/jquery-ui-1.10.3.custom.js"></script>		
 	<script>
 		$(function() {
-		 	$( "#accordion" ).accordion();
+		 	$( "#accordion" ).accordion({
+			collapsible: true
+			});
 		 	$( ".selector" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
 			    var icons = {
 			      header: "ui-icon-circle-arrow-e",
@@ -27,87 +29,78 @@
 	<?php include("topnav.html"); ?>
 
     <div class="content">
-		<div class="childelem" style="float:left;padding-top:2%">
 
+<fieldset>
+<legend>Frequently Asked Questions</legend>
 		  <div id="accordion">
-			  <h3>What are rounds?</h3>
+			  <h3>How do I register for the competition?</h3>
 			  <div>
 			    <p>
-			    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-			    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-			    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-			    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+Simply visit our <a href="register.php">Registration</a> page to sign up. We will send you a confirmation email and you will be ready to compete! 
 			    </p>
 			  </div>
-			  <h3>How are points awarded?</h3>
+<h3>Who is able to participate?</h3>
 			  <div>
 			    <p>
-			    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-			    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-			    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-			    suscipit faucibus urna.
+Everyone is able to participate, but in order to receive prizes, the competitor must be a legal resident of the United States or Canada and cannot be a current or former employee of Ultimate Software.
 			    </p>
 			  </div>
-			  <h3>Are there prizes?</h3>
+<h3>Where is the competition located?</h3>
 			  <div>
 			    <p>
-			    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-			    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-			    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-			    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+The practise competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
 			    </p>
-			    <ul>
-			      <li>Grand Prize : $3910510581.00</li>
-			      <li>Runner Up : Ipad Mini</li>
-			      <li>Honorable Mentions : $25 Outback gift card</li>
-			    </ul>
 			  </div>
-			  <h3>How many people can be on a team?</h3>
+<h3>When is the competition?</h3>
 			  <div>
 			    <p>
-			    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-			    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-			    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-			    mauris vel est.
-			    </p>
-			    <p>
-			    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-			    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-			    inceptos himenaeos.
+The official competition is March 8th 2014, 1PM - 5PM EST. There is also a practise competition on February 13th from 2PM-5PM EST, if you want to try out the judging system.
 			    </p>
 			  </div>
-			  <h3>What languages are supported?</h3>
+<h3>What kind of problems can I expect?</h3>
 			  <div>
 			    <p>
-			    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-			    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-			    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-			    mauris vel est.
-			    </p>
-			    <p>
-			    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-			    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-			    inceptos himenaeos.
+The problems in the competition are algorithm based, with points being awarded for efficiency rather than style. Topics can include any combination of the following: graph theory, combinatorics, number theory, game theory, data structures, calculus, string problems, and dynamic programming.
 			    </p>
 			  </div>
-			  <h3>What does Ultimate Software do?</h3>
+<h3>What are the constraints for my solution?</h3>
 			  <div>
 			    <p>
-			    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-			    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-			    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-			    mauris vel est.
-			    </p>
-			    <p>
-			    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-			    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-			    inceptos himenaeos.
-			    </p>
-			  </div>
-		</div> 
+Each submission will be given 5s to run, with Java having an extra 2.5s.
+There will also be an maximum memory usage limit of 256MB. These limits are intended to inspire creative ways of finding efficient solutions to hard problems.
 
-		</div>
+The solution must be contained in one file, of size no greater than 256KB.
+
+You may submit a solution to a problem an unlimited number of times, but each incorrect solution will dock you 20 penalty points.
+			    </p>
+			  </div>
+<h3>What languages can I use?</h3>
+			  <div>
+			    <p>
+Submissions will be accepted in Java 7, C, C++, Mono C#, Python (2.7), and Ruby (1.7)
+			    </p>
+			  </div>
+<h3>What if I don't understand a part of the problem?</h3>
+			  <div>
+			    <p>
+There will be opportunities to ask for clarifications. You can submit a clarification request for any problem or a piece of the system, and we will try to respond in a timely fashion. Please note that we cannot give any hints or insight into solutions. Should a wording in the problem statement be deemed ambiguous, all contestants will be notified of the clarification.
+			    </p>
+			  </div>
+<h3>Am I allowed to use the internet?</h3>
+			  <div>			    <p>
+You may access the internet for API reference only. The practise competition will not be proctored, but we highly recommend sticking to your knowledge and your language’s API website as the real competition will be.
+			    </p>			  </div>
+			  <h3>How are rankings determined?</h3>
+			  <div>
+			    <p>
+The judging system will be similar to that of ACM. The contestants will be ranked based on the number of questions solved, and then by least sum of time taken to solve their submissions. There will be unlimited number of submissions, but each incorrect one will be 20 penalty points. 
+			    </p>
+			  </div>
+
+		</div> 
     </div>
+</fieldset>
+
 
 
 </div>

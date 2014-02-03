@@ -4,21 +4,7 @@
 	<meta charset="utf-8">
 	<title>Welcome to Ulticoder!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
-	<script src="jquery-1.10.2.js"></script>
-	<script src="jqueryui/js/jquery-ui-1.10.3.custom.js"></script>		
-	<script>
-		$(function() {
-		 	$( "#accordion" ).accordion();
-		 	$( ".selector" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
-			    var icons = {
-			      header: "ui-icon-circle-arrow-e",
-			      activeHeader: "ui-icon-circle-arrow-s"
-			    };
-			    $( "#accordion" ).accordion({ icons: icons });
-			  });
-	</script>
 </head>
 <body>
 
@@ -27,7 +13,10 @@
 	<?php include("topnav.html"); ?>
 
     <div class="content">
-		<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHJOSHJxMU5jaUtwOEJ1M2VvMWxNRlE6MA" style="overflow:hidden;height:800px;width:100%" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<fieldset>
+<legend>Contact Us</legend>
+	<iframe src="https://docs.google.com/forms/d/1Tup0MUwG8XDmepb0FzOOV2c6lmqdM0K2yxGG_a2kgQA/viewform?embedded=true" style="overflow:hidden;height:850px;width:100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</fieldset>
     </div>
 
 
