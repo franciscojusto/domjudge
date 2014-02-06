@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo rsync -r www/ domserver/
+sudo rsync -r lib/www domserver/lib/
