@@ -29,8 +29,7 @@ _gaq.push(['_trackPageview']);
 
 </script>
 
-
-
+<div id="strip"></div>
 <div id="container">
     
 	<?php include("topnav.html"); ?>
@@ -38,7 +37,6 @@ _gaq.push(['_trackPageview']);
 <legend>Careers</legend>   
 <div class="content">
     
-
 	<table cellpadding="0" cellspacing="0" align="Left" border="0" width="100%" bordercolor="#FFFFFF">
 	<tr>
 		<td align="Center" class="Cell"><img id="_ctl7" title="" src="https://myrec.ultimatesoftware.com/usg1006/JobBoard/Custom/SkinCustom/USG1006/bestcomp.jpg" border="0" /></td>
@@ -52,6 +50,7 @@ _gaq.push(['_trackPageview']);
 
 	<div>
 	<h4>Opportunities:</h4>
+	<br>
 	<ul>
 		<li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*41C69C9DCC429218" target="_break">Senior C# Software Engineer in Florida</a></li>
 		<li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*F8D5B36530D340E7" target="_break">Software Engineer Intern in Florida</a></li>
@@ -59,6 +58,7 @@ _gaq.push(['_trackPageview']);
 	</ul>
 	</div>
 
+	<br>
 	<span class="Message">Having Technical issues? Please contact us at <a href="mailto:Careers@ultimatesoftware.com">Careers@ultimatesoftware.com</a> with your issue and contact information so that we may assist you. </span>
 
 </div>

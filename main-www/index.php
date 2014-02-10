@@ -33,22 +33,7 @@
 <div id="strip"></div>
 
 <div id="container">
-<div id="topnav">
-  <div class="left"> <a href="index.php" class="button"> <img src="logo.png" id="logo" alt="logo image" /> </a> </div>
-  <div class="right">
-    <div id="menu">
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="contest.php">Contest</a></li>
-        <li><a href="rules.php">Rules</a></li>
-        <li><a href="faq.php">FAQ</a></li>
-        <li><a href="register.php">Registration</a></li>
-        <li><a href="contact.php">Contact Us</a></li>
-        <li><a class="lastlink" target="_blank" href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/Default.aspx">Internship Opportunities</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+	<?php include("topnav.html");?>
 <div class="content">
   <div class="left" style="overflow:hidden">
 <!--[if IE]><object width="100%" height="410" id="viddlerOuter-d0c49de9" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="movie" value="//www.viddler.com/player/d0c49de9/"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="allowFullScreen" value="true"><param name="flashVars" value="f=1&autoplay=f&disablebranding=1&loop=0&nologo=1&hd=1&nobuttons=t"><object id="viddlerInner-d0c49de9"><video id="viddlerVideo-d0c49de9" src="//www.viddler.com/file/d0c49de9/html5mobile/" type="video/mp4" width="100%" height="380" poster="//www.viddler.com/thumbnail/d0c49de9/" controls="controls" x-webkit-airplay="allow"></video></object></object><![endif]-->
