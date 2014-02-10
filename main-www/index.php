@@ -50,7 +50,9 @@
           <p>Our next competition is March 8 2014, 1-5pm</p>
         </div>
         </div>
-        <h3>What is UltiCoder?</h3>
+	<h4>Participate in our March 8th coding competition for a chance to win a trip for 2 to South Beach. Trip, cash and prizes are given to the top 3 finishers.</h4>
+	<br><br>
+	<h3>What is UltiCoder?</h3>
         <p><em>UltiCoder</em> brings together bright minds to solve tough coding problems and provide the best solutions in a competition awarding prizes to top performers.</p><br>
         <h3>Who are we?</h3>
         <p>

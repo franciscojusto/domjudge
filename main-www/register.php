@@ -9,13 +9,11 @@
 <body>
 <div id="strip"></div>
 <div id="container">
-
-    <?php include("topnav.html"); ?>
-    <div class="content">
-		<iframe src="source/register.php" style="overflow:hidden;height:1000px;width:100%" height="100%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>
-
+	<?php include("topnav.html"); ?>
+	<fieldset>
+	<legend>Registration</legend>
+	<iframe src="source/register.php" style="overflow:hidden;height:1000px;width:100%" height="100%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</fieldset>
 </div>
-
 </body>
 </html>

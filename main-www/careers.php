@@ -13,8 +13,8 @@
 <style type="text/css">
 
 .youtubeVideo{
-	width: 580px !important; 
-	height: 390px !important; 
+	width: 560px !important; 
+	height: 315px !important; 
 }
 
 </style>
