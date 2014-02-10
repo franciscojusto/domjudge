@@ -12,10 +12,9 @@
 
 	<?php include("topnav.html"); ?>
 
-    <div class="content">
 <fieldset>
 <legend>Official Rules</legend>
-<div>
+<div class="content">
 <h2 align="center"> ULTIMATE SOFTWARE ULTICODER CONTEST </h2>
 <br>
 
@@ -150,7 +149,6 @@ Each contestant agrees to indemnified Ultimate Software at all times from and ag
 
 </div>
 </fieldset>
-    </div>
 
 </div>
 

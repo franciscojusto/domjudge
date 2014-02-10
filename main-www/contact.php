@@ -11,12 +11,12 @@
 
 <div id="container">
 	<?php include("topnav.html"); ?>  
-<div class="content">
   <fieldset>
 <legend>Contact Us</legend>
+<div class="content">
 	<iframe src="https://docs.google.com/forms/d/1Tup0MUwG8XDmepb0FzOOV2c6lmqdM0K2yxGG_a2kgQA/viewform?embedded=true" style="overflow:hidden;height:850px;width:100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</fieldset>
   </div>
+</fieldset>
 
 
 </div>

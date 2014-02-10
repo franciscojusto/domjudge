@@ -12,16 +12,14 @@
 
     <?php include("topnav.html");?>
 
-    <div class="content">
 <fieldset>
 <legend>Contest</legend>
-<div class="center">
+<div class="content">
 <a href="domjudge/public" class="button">
 <input type="submit" value="Enter" style="width:40%;height:100px;" class="center peter-river-flat-button">
 </a>
 </div>
 </fieldset>
-    </div>
 
 </div>
 

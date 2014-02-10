@@ -28,10 +28,10 @@
 
 	<?php include("topnav.html"); ?>
 
-    <div class="content">
 
 <fieldset>
 <legend>Frequently Asked Questions</legend>
+    <div class="content">
 		  <div id="accordion">
 			  <h3>How do I register for the competition?</h3>
 			  <div>
