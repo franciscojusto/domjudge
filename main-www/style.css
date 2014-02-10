@@ -1,174 +1,243 @@
-div { display:block; }
-html { font-family: 'Average', serif; }
-body { font-size: 18px; }
-div#container { 
+* {margin: 0px};
+
+div {
+	display: block;
+}
+#strip {
+	background-color: #5ca616;
+	height: 7px;
+}
+html {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+ul {
+	margin-left: 0px;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: #333;
+}
+div#container {
 	width: 850px;
 	position: relative;
-	margin-left: auto; 
+	margin-left: auto;
 	margin-right: auto;
+	padding-top: 0px;
 }
 div#topnav {
 	width: 100%;
-    height: 100px;
-    margin-top:30px;
-    margin-bottom:30px;
-    position: relative;
+	height: 100px;
+	margin-top: 5px;
+	position: relative;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
 }
 #topnav .left {
-    width: 30%;
-    height: 100%;
-    position: relative;
-    float: left;
-    display:block;
+	height: 95px;
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	margin-bottom: 25px;
 }
 #topnav .right {
-    width: 70%;
-    height: 100%;
-    position: relative;
-    float:left;
-    display:block;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	float: left;
+	display: block;
+	margin-bottom: 0px;
+	font-size: 16px;
 }
 #topnav h2 {
-    margin:15px 0px 0px 20px; 
-    color:#0F233C;
+	margin: 15px 0px 0px 20px;
 }
-#menu {
-    margin:-5px 0px 0px -25px; 
-    padding:0px;
+#menu ul li {
+	float: left;
+	display: inline;
 }
-#menu ul li {float:left; display:inline; padding:5px 0px; }
-#menu ul li a {float:left; padding:0px 10px; font-size:14px; border-right: 1px solid #01111F; text-decoration:none; }
-#menu a:link {color:#0C5394; }
-#menu a:visited {color:#0C5394; }
-#menu a:active {color:#DCEBFD; }
-#menu a:hover {color:#97C2F9; }
+#menu ul li a {
+	float: left;
+	padding: 0px 10px;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #cccccc;
+}
+#menu a:link {
+	color: #286fab;
+}
+#menu a:visited {
+	color: #286FAB;
+}
+#menu a:active {
+	color: #D8E9FB;
+}
+#menu a:hover {
+	color: #84BEF2;
+}
 #menu ul li a.lastlink{border:0px;}
 #container .content {
-    padding: 0px 0px 0px 25px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 75px;
 }
 #container .content .left {
-    width: 43%;
-    position: relative;
-    float: left;
-    display:block;
+	width: 43%;
+	position: relative;
+	float: left;
+	display: block;
 }
 #container .content .right {
-    position: relative;
-    margin-left: 45px;
-    width: 50%;
-    float: left;
+	position: relative;
+	margin-left: 45px;
+	width: 50%;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
 }
 #container .registerbox {
-    background-color: #EEEEEE;
-    padding: 30px 30px 20px 30px;
-}
-#container {
-    color:#666666;
+	padding: 30px 30px 20px 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
 }
 .registerbox .label {
-    margin-top: 10px;
-    font-size: 14px;
-    display: inline;
+	font-size: 14px;
+	display: inline;
+	line-height: 30px;
+	font-weight: 700;
+	color: #5ca616;
+}
+#container {
+	width: 100%;
 }
 #container h4 {
-    margin-bottom: -10px;
-    color:#0F233C;
+	margin-bottom: -9px;
 }
 
 /* #Nephritis Flat Button
 ==================================================*/
 .flat-button {
-    position: relative;
-    vertical-align: top;
-    width: 100%;
-    height: 60px;
-    padding: 0;
-    font-size: 22px;
-    color: white;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    background: #27ae60;
-    border: 0;
-    border-bottom: 2px solid #219d55;
-    cursor: pointer;
-    -webkit-box-shadow: inset 0 -2px #219d55;
-    box-shadow: inset 0 -2px #219d55;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 60px;
+	padding: 0;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	background: -webkit-linear-gradient(#5ca616, #4B9510);
+	background: -o-linear-gradient(#5ca616, #4B9510);
+	background: -moz-linear-gradient(#5ca616, #4B9510);
+	background: linear-gradient(#5ca616, #4B9510);	
+	border-radius:8px;
+	border: none;
+
 }
 
 .flat-button:active {
-    top: 1px;
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+	top: 1px;
+	outline: none;
+	background: #5ca616;
 }
 
 /* #Peter River Flat Button
 ==================================================*/
 .peter-river-flat-button {
-  position: relative;
-  vertical-align: top;
-  width: 100%;
-  height: 60px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #3498db;
-  border: 0;
-  border-bottom: 2px solid #2a8bcc;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #2a8bcc;
-  box-shadow: inset 0 -2px #2a8bcc;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: -webkit-linear-gradient(#408bc4, #0a4377);
+	background: -o-linear-gradient(#408bc4, #0a4377);
+	background: -moz-linear-gradient(#408bc4, #0a4377);
+	background: linear-gradient(#408bc4, #0a4377);	
+	border: 0;
+	border-radius:8px;
+	cursor: pointer;
 }
 .peter-river-flat-button:active {
-  top: 1px;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: #408bc4;
+}
+.label {
+	margin-top: 20px;
 }
 
 #container fieldset
 {
-   width: auto;
-   padding:20px;
-   border:1px solid #ccc;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
--khtml-border-radius: 10px;
-border-radius: 10px;   
+	width: auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
 }
 
 #container legend, #container h2
 {
-   font-family : Arial, sans-serif;
-   font-size: 1.3em;
-   font-weight:bold;
-   color:#333;
+	font-family : Helvetica Neue, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #808080;
 }
 
 iframe {
-	width:325px;
-	height:191px;
+	width: 325px;
+	height: 191px;
 }
 form {
 	float: left; 
 }
-div#textbody { 
-	float:right; 
-	width:425px;
+div#textbody {
+	float: right;
+	width: 425px;
 	padding-left: 5px;
 	margin-left: 5px;
 }
-img { 
-	margin: 5px; 
-	margin-bottom: 2px; 
+img {
+	margin: 5px;
 }
 .center {
-	margin-left:auto;
-	margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 }
 a.button {
 	text-decoration: none;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 300;
+	color: #808080;
+	margin-bottom: 4px;
+}
+p {
+	font-size: 14px;
+	font-weight: 200;
+	color: #808080;
+	margin-top: 0px;
 }
