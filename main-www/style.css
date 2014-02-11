@@ -12,7 +12,10 @@ html {
 	font-size: 14px;
 	color: #333;
 }
-
+.topNav {
+	margin-left: -40px;
+	padding: 5;
+}
 ul {
 	margin-left: 0px;
 	padding: 5;
@@ -97,6 +100,7 @@ div#topnav {
 	position: relative;
 	float: left;
 	display: block;
+	margin-top: 30px;
 }
 #container .content .right {
 	position: relative;
@@ -241,4 +245,15 @@ p {
 	font-weight: 200;
 	color: #808080;
 	margin-top: 0px;
+}
+.footer {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ccc;
+	float: left;
+	height: 100px;
+	width: 850px;
+	position: relative;
+	margin-top: 20px;
+	padding-top: 10px;
 }

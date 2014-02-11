@@ -13,7 +13,14 @@
 </head>
 <body>
 
+<style type="text/css">
 
+.youtubeVideo{
+	width: 360px !important; 
+	height: 315px !important; 
+}
+
+</style>
 
 <script type="text/javascript">
 
@@ -35,11 +42,7 @@
 <div id="container">
 	<?php include("topnav.html");?>
 <div class="content">
-  <div class="left" style="overflow:hidden">
-<!--[if IE]><object width="100%" height="410" id="viddlerOuter-d0c49de9" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="movie" value="//www.viddler.com/player/d0c49de9/"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="allowFullScreen" value="true"><param name="flashVars" value="f=1&autoplay=f&disablebranding=1&loop=0&nologo=1&hd=1&nobuttons=t"><object id="viddlerInner-d0c49de9"><video id="viddlerVideo-d0c49de9" src="//www.viddler.com/file/d0c49de9/html5mobile/" type="video/mp4" width="100%" height="380" poster="//www.viddler.com/thumbnail/d0c49de9/" controls="controls" x-webkit-airplay="allow"></video></object></object><![endif]-->
-<!--[if !IE]> <!-->
-<object width="100%" height="410" id="viddlerOuter-d0c49de9" type="application/x-shockwave-flash" data="//www.viddler.com/player/d0c49de9/"> <param name="movie" value="//www.viddler.com/player/d0c49de9/"> <param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="allowFullScreen" value="true"><param name="flashVars" value="f=1&amp;autoplay=f&amp;disablebranding=1&amp;loop=0&amp;nologo=1&amp;hd=1&amp;nobuttons=t"><object id="viddlerInner-d0c49de9"> <video id="viddlerVideo-d0c49de9" src="//www.viddler.com/file/d0c49de9/html5mobile/" type="video/mp4" height="380" poster="//www.viddler.com/thumbnail/d0c49de9/" controls="controls" x-webkit-airplay="allow"></video> </object></object>
-<!--<![endif]-->
+  <div class="left" style="overflow:hidden"><iframe class="youtubeVideo" width="560" height="315" src="http://www.youtube.com/embed/9yQDGpX_7Zs?autoplay=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="right">
         <div class="registerbox">
@@ -50,14 +53,18 @@
           <p>Our next competition is March 8 2014, 1-5pm</p>
         </div>
         </div>
-	<h4>Participate in our March 8th coding competition for a chance to win a trip for 2 to South Beach. Trip, cash and prizes are given to the top 3 finishers.</h4>
+        <h4>Participate in our March 8th coding competition for a chance to win a trip for 2 to South Beach. Trip, cash and prizes are given to the top 3 finishers.</h4>
 	<br><br>
-	<h3>What is UltiCoder?</h3>
+        <h3>What is UltiCoder?</h3>
         <p><em>UltiCoder</em> brings together bright minds to solve tough coding problems and provide the best solutions in a competition awarding prizes to top performers.</p><br>
         <h3>Who are we?</h3>
         <p>
         Ultimate Software is a team of professionals dedicated to putting people first providing cloud solutions for complex business problems.
         </p>
+    </div>
+    <div class="footer">
+    <div style="float: left"><img src="images/fortune_logo.jpg" width="58" height="75"></div>
+    <div style="float: right"><img src="images/Sponsored-by-US.jpg" width="163" height="75"> </div>
     </div>
 
 </div>

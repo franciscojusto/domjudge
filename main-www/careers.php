@@ -47,16 +47,24 @@ _gaq.push(['_trackPageview']);
 		</td>
 	</tr>
 	</table>
-
-	<div>
-	<h4>Opportunities:</h4>
-	<br>
-	<ul>
-		<li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*41C69C9DCC429218" target="_break">Senior C# Software Engineer in Florida</a></li>
-		<li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*F8D5B36530D340E7" target="_break">Software Engineer Intern in Florida</a></li>
-		<li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*D4FF620DFFC66D4E" target="_break">Software Engineer Intern in Toronto</a></li>
-	</ul>
-	</div>
+    <div class="articles">
+      <div>
+        <h4>Opportunities:</h4>
+        <br>
+        <ul>
+          <li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*41C69C9DCC429218" target="_break">Senior C# Software Engineer in Florida</a></li>
+          <li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*F8D5B36530D340E7" target="_break">Software Engineer Intern in Florida</a></li>
+          <li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*D4FF620DFFC66D4E" target="_break">Software Engineer Intern in Toronto</a></li>
+          </ul><br>
+        <h4>Articles:</h4>
+        <br>
+        <ul>
+          <li><a href="http://bit.ly/1f8OXdA" target="_break">Ultimate Software is called “The Google of South Florida”</a></li>
+          <li><a href="http://www.forbes.com/sites/ciocentral/2012/01/09/executive-profiles-disruptive-tech-leaders-in-cloud-computing-adam-rogers-ultimate-software/" target="_break">Forbes article about our CTO, Adam Rogers, as a leader in the cloud computing area</a></li>
+          <li><a href="http://www.forbes.com/sites/louiscolumbus/2013/02/22/the-best-cloud-computing-companies-and-ceos-to-work-for-in-2013/" target="_break">Ultimate was listed #5 Best Cloud Company to Work for and #4 Best Cloud CEO to Work for on Forbes.com</a></li>
+          </ul>
+      </div>
+    </div>
 
 	<br>
 	<span class="Message">Having Technical issues? Please contact us at <a href="mailto:Careers@ultimatesoftware.com">Careers@ultimatesoftware.com</a> with your issue and contact information so that we may assist you. </span>

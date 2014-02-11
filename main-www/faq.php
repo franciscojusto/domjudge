@@ -86,10 +86,6 @@ Submissions will be accepted in Java 7, C, C++, Mono C#, Python (2.7), and Ruby 
 There will be opportunities to ask for clarifications. You can submit a clarification request for any problem or a piece of the system, and we will try to respond in a timely fashion. Please note that we cannot give any hints or insight into solutions. Should a wording in the problem statement be deemed ambiguous, all contestants will be notified of the clarification.
 			    </p>
 			  </div>
-<h3>Am I allowed to use the internet?</h3>
-			  <div>			    <p>
-You may access the internet for API reference only. The practise competition will not be proctored, but we highly recommend sticking to your knowledge and your language’s API website as the real competition will be.
-			    </p>			  </div>
 			  <h3>How are rankings determined?</h3>
 			  <div>
 			    <p>
