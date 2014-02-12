@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Ulticoder!</title>
+	<title>Contact - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
 </head>
@@ -20,6 +20,6 @@
 
 
 </div>
-
+<?php include_once("analyticstracking.php") ?>
 </body>
 </html>

@@ -234,6 +234,9 @@ img {
 a.button {
 	text-decoration: none;
 }
+a img {
+	border: none;
+}
 h3 {
 	font-size: 20px;
 	font-weight: 300;

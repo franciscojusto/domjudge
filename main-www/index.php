@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Ulticoder!</title>
+	<title>Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 	.right1 {	margin-left: -20px;
@@ -22,21 +22,6 @@
 
 </style>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-47503831-1']);
-  _gaq.push(['_setDomainName', 'ulticoder.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
 <div id="strip"></div>
 
 <div id="container">
@@ -53,13 +38,13 @@
           <p>Our next competition is March 8 2014, 1-5pm</p>
         </div>
         </div>
-        <h4>Participate in our March 8th coding competition for a chance to win a trip for 2 to South Beach. Trip, cash and prizes are given to the top 3 finishers.</h4>
+        <h4>Register for our March 8, 2014 coding competition to win a trip for 2 to South Beach. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
 	<br><br>
         <h3>What is UltiCoder?</h3>
-        <p><em>UltiCoder</em> brings together bright minds to solve tough coding problems and provide the best solutions in a competition awarding prizes to top performers.</p><br>
+        <p><em>UltiCoder</em> brings together bright minds to solve tough algorithm-based coding problems in an ACM style competition awarding prizes to top performers.</p><br>
         <h3>Who are we?</h3>
         <p>
-        Ultimate Software is a team of professionals dedicated to putting people first providing cloud solutions for complex business problems.
+        Ultimate Software is a leading cloud provider of people management solutions for businesses across all industries. Ultimate Software has been ranked a Fortune Top 100 Best Place to Work Three Years in a Row.
         </p>
     </div>
     <div class="footer">
@@ -68,6 +53,6 @@
     </div>
 
 </div>
-
+<?php include_once("analyticstracking.php") ?>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Ulticoder!</title>
+	<title>FAQ - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
@@ -101,5 +101,6 @@ The judging system will be similar to that of ACM. The contestants will be ranke
 
 </div>
 
+<?php include_once("analyticstracking.php") ?>
 </body>
 </html>
