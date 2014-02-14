@@ -49,14 +49,14 @@ VOID WHERE PROHIBITED. </h4>
 <br>
 <h4>1st 2nd and 3rd place winners all receive trip to South Beach plus a Cash Prize:</h4>
 <br>
-<p>Friday night stay for two at the Marriott Stanton Hotel in South Beach (161 Ocean Drive Miami Beach, FL 33139), round-trip coach class air travel to and from the Miami International Airport and a car service during your one night stay is included. Timing is subject to availability and the travel dates must be between June 1st 2014 and December 31st 2014. Ultimate Software will have the sole discretion on flight selection.  The prize winner will pick up his/her cash prize at Ultimate Software at its headquarters location in Weston, FL at a scheduled time, Monday – Friday 9am – 5pm EST (national holidays excluded) during their trip. Contestant agrees to cooperate and respond to all emails from Ultimate Software within five (5) days of receipt. With regards to flight confirmation, Contestant must respond within 48 hours of Ultimate Software sending such email.</p>
+<p>Friday night stay for two at the Marriott Stanton Hotel in South Beach (161 Ocean Drive Miami Beach, FL 33139), round-trip coach class air travel to and from the Miami International Airport (or Fort Lauderdale-Hollywood International Airport) and a car service during your one night stay is included. Timing is subject to availability and the travel dates must be between June 1st 2014 and December 31st 2014. Ultimate Software will have the sole discretion on flight selection.  The prize winner will pick up his/her cash prize at Ultimate Software at its headquarters location in Weston, FL at a scheduled time, Monday – Friday 9am – 5pm EST (national holidays excluded) during their trip. Contestant agrees to cooperate and respond to all emails from Ultimate Software within five (5) days of receipt. With regards to flight confirmation, Contestant must respond within 48 hours of Ultimate Software sending such email.</p>
 <br>
 <p>All prizes are awarded without warranty of any kind, express or implied without limitations. </p>
 <br>
 
 <h4>Cash Prize Amounts:</h4>
 <br>
-<p> 1st place: $300 <br>
+<p> 1st place: $500 <br>
 2nd place: $200 <br>
 3rd place: $100 </p>
 <br>

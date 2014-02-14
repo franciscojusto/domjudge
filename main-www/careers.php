@@ -3,21 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Careers - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css?ver=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
 	<script src="jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 <body>
-
-<style type="text/css">
-
-.youtubeVideo{
-	width: 560px !important; 
-	height: 315px !important; 
-}
-
-</style>
 
 <script type="text/javascript">
 	
@@ -43,7 +34,7 @@ _gaq.push(['_trackPageview']);
 	</tr>
 	<tr>
 		<td align="Center" class="Cell">
-		<iframe title="Ultimate Software" class="youtubeVideo" type="text/html" src="https://www.youtube.com/embed/qUDmnT5qeNw?autoplay=0"frameborder="0" allowFullScreen></iframe>
+		<iframe title="Ultimate Software" class="largeYoutubeVideo" type="text/html" src="https://www.youtube.com/embed/qUDmnT5qeNw?autoplay=0"frameborder="0" allowFullScreen></iframe>
 		</td>
 	</tr>
 	</table>

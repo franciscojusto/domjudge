@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ultimate Software Programming Competition, Win a Trip to South Beach</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css?ver=1.0">
 	<style type="text/css">
 	.right1 {	margin-left: -20px;
 }
@@ -12,15 +12,6 @@
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 <body>
-
-<style type="text/css">
-
-.youtubeVideo{
-	width: 360px !important; 
-	height: 315px !important; 
-}
-
-</style>
 
 <div id="strip"></div>
 
@@ -38,13 +29,13 @@
           <p>Our next competition is March 8 2014, 1-5pm</p>
         </div>
         </div>
-        <h4>Register for our March 8, 2014 coding competition to win a trip for 2 to South Beach. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
+        <h4>Register for our <em>March 8, 2014</em> coding competition to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
 	<br><br>
         <h3>What is UltiCoder?</h3>
-        <p><em>UltiCoder</em> brings together bright minds to solve tough algorithm-based coding problems in an ACM style competition awarding prizes to top performers.</p><br>
+        <p><em>UltiCoder</em> brings together bright minded people who compete as <b>individuals</b> remotely throughout the US and Canada solving tough algorithm-based coding problems in an ACM style competition awarding prizes to top performers.</p><br>
         <h3>Who are we?</h3>
         <p>
-        Ultimate Software is a leading cloud provider of people management solutions for businesses across all industries. Ultimate Software has been ranked a Fortune Top 100 Best Place to Work Three Years in a Row.
+        Ultimate Software is a leading cloud provider of people management solutions for businesses across all industries. Ultimate Software is located in the Miami FL area and has been ranked a Fortune Top 100 Best Place to Work Three Years in a Row.
         </p>
     </div>
     <div class="footer">
