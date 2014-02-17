@@ -186,6 +186,7 @@ div#topnav {
 	color: white;
 	text-align: center;
 	cursor: pointer;
+	background: #5ca616;
 	background: -webkit-linear-gradient(#5ca616, #4B9510);
 	background: -o-linear-gradient(#5ca616, #4B9510);
 	background: -moz-linear-gradient(#5ca616, #4B9510);
@@ -213,6 +214,7 @@ div#topnav {
 	color: white;
 	text-align: center;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: #408bc4;	
 	background: -webkit-linear-gradient(#408bc4, #0a4377);
 	background: -o-linear-gradient(#408bc4, #0a4377);
 	background: -moz-linear-gradient(#408bc4, #0a4377);
