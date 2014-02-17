@@ -215,8 +215,36 @@ Spry.Widget.TabbedPanels.prototype.cancelEvent = function(e)
 	return false;
 };
 
+function stopPlayingVideos() {
+	$('#vid_*').each(function() {
+		var url = $(this).attr('src');
+		alert(url);
+		$(this).attr('src', '');
+		$(this).attr('src', url);
+	});
+};
+
+function pauseVideo(id) {
+	var vidFrame = document.getElementById(id).contentWindow;
+	func = 'pauseVideo'; // 'playVideo';
+	vidFrame.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+};
+
+function playVideo(id) {
+	var vidFrame = document.getElementById(id).contentWindow;
+	func = 'playVideo';
+	vidFrame.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+};
+
+function toggleVideoState(tab) {
+	pauseVideo("vid_culture");
+	pauseVideo("vid_innovation");
+	playVideo(tab.getAttribute('related'));
+};
+
 Spry.Widget.TabbedPanels.prototype.onTabClick = function(e, tab)
 {
+	toggleVideoState(tab);
 	this.showPanel(tab);
 	return this.cancelEvent(e);
 };
