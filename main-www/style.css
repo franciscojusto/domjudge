@@ -34,6 +34,84 @@ div#container {
 	margin-right: auto;
 	padding-top: 0px;
 }
+
+h4 em {
+	color: #5ca616;
+	font-style:normal;
+}
+
+.youtubeVideo{
+	width: 360px !important;
+	height: 315px !important;
+}
+
+.largeYoutubeVideo{
+	width: 510px !important;
+	height: 290px !important;
+}
+
+#container {
+	width: 100%;
+}
+#container .content {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+#container .content .left {
+	width: 43%;
+	position: relative;
+	float: left;
+	display: block;
+	margin-top: 30px;
+	height: 100%;
+}
+#container .content .right {
+	position: relative;
+	margin-left: 45px;
+	width: 50%;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#container .registerbox {
+	padding: 30px 30px 20px 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+#container fieldset
+{
+	width: auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#container legend, #container h2
+{
+	font-family : Helvetica Neue, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #808080;
+}
+#container h4 {
+	margin-bottom: -9px;
+}
+
+iframe {
+	width: 425px;
+	height: 340px;
+}
 div#topnav {
 	width: 100%;
 	height: 100px;
@@ -88,49 +166,12 @@ div#topnav {
 	color: #84BEF2;
 }
 #menu ul li a.lastlink{border:0px;}
-#container .content {
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	margin-top: 0px;
-}
-#container .content .left {
-	width: 43%;
-	position: relative;
-	float: left;
-	display: block;
-	margin-top: 30px;
-}
-#container .content .right {
-	position: relative;
-	margin-left: 45px;
-	width: 50%;
-	float: left;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-#container .registerbox {
-	padding: 30px 30px 20px 0px;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
 .registerbox .label {
 	font-size: 14px;
 	display: inline;
 	line-height: 30px;
 	font-weight: 700;
 	color: #5ca616;
-}
-#container {
-	width: 100%;
-}
-#container h4 {
-	margin-bottom: -9px;
 }
 
 /* #Nephritis Flat Button
@@ -190,30 +231,6 @@ div#topnav {
 .label {
 	margin-top: 20px;
 }
-
-#container fieldset
-{
-	width: auto;
-	padding: 20px;
-	border: 1px solid #ccc;
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-khtml-border-radius: 0px;
-	border-radius: 0px;
-}
-
-#container legend, #container h2
-{
-	font-family : Helvetica Neue, Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 300;
-	color: #808080;
-}
-
-iframe {
-	width: 325px;
-	height: 191px;
-}
 form {
 	float: left; 
 }
@@ -226,10 +243,17 @@ div#textbody {
 img {
 	margin: 5px;
 }
+#fortune_logo {
+	float: right;
+	margin-top: 10px;
+}
 .center {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	width: 500px;
+	height: 500px;
+	position: relative;
 }
 a.button {
 	text-decoration: none;
@@ -249,6 +273,9 @@ p {
 	color: #808080;
 	margin-top: 0px;
 }
+.articles {
+	padding-left: 90px;
+}
 .footer {
 	border-top-width: 1px;
 	border-top-style: solid;
@@ -260,15 +287,25 @@ p {
 	margin-top: 20px;
 	padding-top: 10px;
 }
-h4 em {
-	color: #5ca616;
-	font-style:normal;
+.videos {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ccc;
 }
-.youtubeVideo{
-	width: 360px !important; 
-	height: 315px !important; 
+#container fieldset .content .videos {
+	background-color: #FFF;
+	height: 340px;
+	width: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
-.largeYoutubeVideo{
-	width: 560px !important; 
-	height: 315px !important; 
+.timer {
+	height: 50px;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
 }
