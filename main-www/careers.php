@@ -30,7 +30,7 @@ _gaq.push(['_trackPageview']);
 <legend>Careers</legend>   
 <div class="content">
     
-	<table cellpadding="0" cellspacing="0" align="Left" border="1" width="100%" bordercolor="#FFFFFF">
+	<table cellpadding="0" cellspacing="0" align="Left" border="0" width="100%" bordercolor="#FFFFFF">
 	<tr>
 		<td align="Center" class="Cell"><img id="_ctl7" title="" src="https://myrec.ultimatesoftware.com/usg1006/JobBoard/Custom/SkinCustom/USG1006/bestcomp.jpg" border="0" /></td>
 	</tr>

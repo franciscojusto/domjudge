@@ -239,7 +239,7 @@ function playVideo(id) {
 function toggleVideoState(tab) {
 	pauseVideo("vid_culture");
 	pauseVideo("vid_innovation");
-	playVideo(tab.getAttribute('related'));
+//	playVideo(tab.getAttribute('related'));
 };
 
 Spry.Widget.TabbedPanels.prototype.onTabClick = function(e, tab)

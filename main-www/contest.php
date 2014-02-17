@@ -39,6 +39,7 @@ function cdtd() {
 
 
 <fieldset>
+<legend>Contest</legend>
 <div id="timeBox">
 <h3>Our next competition begins in:</h3>
 <div id="daysWrapper">
@@ -57,8 +58,6 @@ function cdtd() {
 </div>
 
 <script type="text/javascript">cdtd();</script>
-
-<legend>Contest</legend>
 <div class="content">
 <a href="domjudge/public" class="button">
 <input type="submit" value="Enter" style="width:30%;height:60px;" class="center peter-river-flat-button">
