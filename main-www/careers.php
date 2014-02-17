@@ -38,12 +38,12 @@ _gaq.push(['_trackPageview']);
     <div class="videos">
     <div id="TabbedPanels1" class="TabbedPanels">
   	<ul class="TabbedPanelsTabGroup">
-    <li class="TabbedPanelsTab" tabindex="0">Ultimate Software Culture</li>
-    <li class="TabbedPanelsTab" tabindex="0">48 Hours Innovation</li>
+    <li class="TabbedPanelsTab" related="vid_culture" tabindex="0">Ultimate Software Culture</li>
+    <li class="TabbedPanelsTab" related="vid_innovation" tabindex="0">48 Hours Innovation</li>
   	</ul>
   	<div class="TabbedPanelsContentGroup">
-  	<div class="TabbedPanelsContent"><iframe class="largeYoutubeVideo" src="https://www.youtube.com/embed/qUDmnT5qeNw?autoplay=0"frameborder="0"></iframe></div>
-  	<div class="TabbedPanelsContent"><iframe class="largeYoutubeVideo" src="https://www.youtube.com/embed/lqQn5lrYHqk" frameborder="0"></iframe></div>
+  	<div class="TabbedPanelsContent"><iframe id="vid_culture" class="largeYoutubeVideo" src="https://www.youtube.com/embed/qUDmnT5qeNw?autoplay=0&enablejsapi=1"frameborder="0"></iframe></div>
+  	<div class="TabbedPanelsContent"><iframe id="vid_innovation" class="largeYoutubeVideo" src="https://www.youtube.com/embed/lqQn5lrYHqk?enablejsapi=1" frameborder="0"></iframe></div>
   	</div>
 	</div>
 	<script type="text/javascript">var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");

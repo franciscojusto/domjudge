@@ -32,7 +32,7 @@ VOID WHERE PROHIBITED. </h4>
 
 <h4>Eligibility</h4>
 <br>
-<p>The competition is open to contestants who are legal residents of the US or Canada and are 18 years of age or older at the time of entry. Current or former employees, interns, contractors, officers, directors, members and representatives of Ultimate Software and its subsidiaries, and affiliates are eligible to compete but are not eligible to win a prize.  Ultimate Software reserves the right to verify eligibility and to adjudicate on any dispute at any time. All contestants must have access to the Internet, a valid postal address, and a valid email address in order to enter. </p>
+<p>The competition is open to contestants who are legal residents of the US or Canada and are 18 years of age or older at the time of entry. <b>Current or former employees, interns, contractors, officers, directors, members and representatives of Ultimate Software and its subsidiaries, and affiliates are eligible to compete but are not eligible to win a prize.</b> Ultimate Software reserves the right to verify eligibility and to adjudicate on any dispute at any time. All contestants must have access to the Internet, a valid postal address, and a valid email address in order to enter. </p>
 <br>
 
 <h4>How to Enter</h4>
@@ -49,7 +49,7 @@ VOID WHERE PROHIBITED. </h4>
 <br>
 <h4>1st 2nd and 3rd place winners all receive trip to South Beach plus a Cash Prize:</h4>
 <br>
-<p>Friday night stay for two at the Marriott Stanton Hotel in South Beach (161 Ocean Drive Miami Beach, FL 33139), round-trip coach class air travel to and from the Miami International Airport (or Fort Lauderdale-Hollywood International Airport) and a car service during your one night stay is included. Timing is subject to availability and the travel dates must be between June 1st 2014 and December 31st 2014. Ultimate Software will have the sole discretion on flight selection.  The prize winner will pick up his/her cash prize at Ultimate Software at its headquarters location in Weston, FL at a scheduled time, Monday – Friday 9am – 5pm EST (national holidays excluded) during their trip. Contestant agrees to cooperate and respond to all emails from Ultimate Software within five (5) days of receipt. With regards to flight confirmation, Contestant must respond within 48 hours of Ultimate Software sending such email.</p>
+<p>Friday night stay for two at the Marriott Stanton Hotel in South Beach (161 Ocean Drive Miami Beach, FL 33139), round-trip coach class air travel to and from the Miami International Airport (or Fort Lauderdale-Hollywood International Airport) and a car service during your one night stay is included. Timing is subject to availability and the travel dates must be between June 1st 2014 and December 31st 2014. Ultimate Software will have the sole discretion on flight selection.  The prize winner will pick up his/her cash prize at Ultimate Software at its headquarters location in Weston, FL at a scheduled time, Monday – Friday 9am – 5pm EST (national holidays excluded) during their trip. A tour of our cutting edge software development area is included. Contestant agrees to cooperate and respond to all emails from Ultimate Software within five (5) days of receipt. With regards to flight confirmation, Contestant must respond within 48 hours of Ultimate Software sending such email.</p>
 <br>
 <p>All prizes are awarded without warranty of any kind, express or implied without limitations. </p>
 <br>
@@ -145,7 +145,7 @@ Each contestant agrees to indemnified Ultimate Software at all times from and ag
 
 <h4>SPONSOR</h4>
 <br>
-<p>The Ultimate Software of this Contest is Ultimate Software Group, Inc. 2000 Ultimate Way, Weston, Florida 33326</p>
+<p>This contest is hosted and sponsored by Ultimate Software Group, Inc. 2000 Ultimate Way, Weston, Florida 33326</p>
 
 </div>
 </fieldset>

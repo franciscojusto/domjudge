@@ -48,7 +48,7 @@ Everyone is able to participate, but in order to receive prizes, the competitor 
 <h3>Where is the competition located?</h3>
 			  <div>
 			    <p>
-The practise competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
+The practice competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
 			    </p>
 			  </div>
 <h3>When is the competition?</h3>
