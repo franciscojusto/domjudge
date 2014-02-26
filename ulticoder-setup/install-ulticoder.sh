@@ -112,4 +112,7 @@ sudo chroot /chroot useradd -d /nonexistent -g nogroup -s /bin/false domjudge-ru
 popd
 rm ".ulticoder_system_updated" 2> /dev/null
 
+# Security
+sudo iptables -I OUTPUT -m owner --uid-owner "domjudge-run" -j REJECT
+
 echo "Install finished."
