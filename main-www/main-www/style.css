@@ -1,0 +1,295 @@
+* {margin: 0px};
+
+div {
+	display: block;
+}
+#strip {
+	background-color: #5ca616;
+	height: 7px;
+}
+html {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+.topNav {
+	margin-left: -40px;
+	padding: 5;
+}
+ul {
+	margin-left: 0px;
+	padding: 5;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: #333;
+	overflow: scroll;
+}
+div#container {
+	width: 850px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+}
+#container {
+	width: 100%;
+}
+#container .content {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+#container .content .left {
+	width: 43%;
+	position: relative;
+	float: left;
+	display: block;
+	margin-top: 30px;
+	height: 100%;
+}
+#container .content .right {
+	position: relative;
+	margin-left: 45px;
+	width: 50%;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#container .registerbox {
+	padding: 30px 30px 20px 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+#container fieldset
+{
+	width: auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#container legend, #container h2
+{
+	font-family : Helvetica Neue, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #808080;
+}
+#container h4 {
+	margin-bottom: -9px;
+}
+
+iframe {
+	width: 425px;
+	height: 340px;
+}
+div#topnav {
+	width: 100%;
+	height: 100px;
+	margin-top: 5px;
+	position: relative;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+}
+#topnav .left {
+	height: 95px;
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	margin-bottom: 25px;
+}
+#topnav .right {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	float: left;
+	display: block;
+	margin-bottom: 0px;
+	font-size: 16px;
+}
+#topnav h2 {
+	margin: 15px 0px 0px 20px;
+}
+#menu ul li {
+	float: left;
+	display: inline;
+}
+#menu ul li a {
+	float: left;
+	padding: 0px 10px;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #cccccc;
+}
+#menu a:link {
+	color: #286fab;
+}
+#menu a:visited {
+	color: #286FAB;
+}
+#menu a:active {
+	color: #D8E9FB;
+}
+#menu a:hover {
+	color: #84BEF2;
+}
+#menu ul li a.lastlink{border:0px;}
+.registerbox .label {
+	font-size: 14px;
+	display: inline;
+	line-height: 30px;
+	font-weight: 700;
+	color: #5ca616;
+}
+
+/* #Nephritis Flat Button
+==================================================*/
+.flat-button {
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 60px;
+	padding: 0;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	background: -webkit-linear-gradient(#5ca616, #4B9510);
+	background: -o-linear-gradient(#5ca616, #4B9510);
+	background: -moz-linear-gradient(#5ca616, #4B9510);
+	background: linear-gradient(#5ca616, #4B9510);	
+	border-radius:8px;
+	border: none;
+
+}
+
+.flat-button:active {
+	top: 1px;
+	outline: none;
+	background: #5ca616;
+}
+
+/* #Peter River Flat Button
+==================================================*/
+.peter-river-flat-button {
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: -webkit-linear-gradient(#408bc4, #0a4377);
+	background: -o-linear-gradient(#408bc4, #0a4377);
+	background: -moz-linear-gradient(#408bc4, #0a4377);
+	background: linear-gradient(#408bc4, #0a4377);	
+	border: 0;
+	border-radius:8px;
+	cursor: pointer;
+}
+.peter-river-flat-button:active {
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: #408bc4;
+}
+.label {
+	margin-top: 20px;
+}
+form {
+	float: left; 
+}
+div#textbody {
+	float: right;
+	width: 425px;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+img {
+	margin: 5px;
+}
+#fortune_logo {
+	float: right;
+	margin-top: 10px;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+a.button {
+	text-decoration: none;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 300;
+	color: #808080;
+	margin-bottom: 4px;
+}
+p {
+	font-size: 14px;
+	font-weight: 200;
+	color: #808080;
+	margin-top: 0px;
+}
+.articles {
+	padding-left: 90px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.footer {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ccc;
+	float: left;
+	height: 100px;
+	width: 850px;
+	position: relative;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+.videos {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ccc;
+}
+#container fieldset .content .videos {
+	background-color: #FFF;
+	height: 340px;
+	width: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.timer {
+	height: 50px;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}

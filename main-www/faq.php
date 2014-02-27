@@ -42,8 +42,7 @@ Simply visit our <a href="register.php">Registration</a> page to sign up. We wil
 <h3>Who is able to participate?</h3>
 			  <div>
 			    <p>
-Everyone is able to participate, but in order to receive prizes, the competitor must be a legal resident of the United States or Canada and cannot be a current or former employee of Ultimate Software.
-			    </p>
+			    The competition is open to contestants who are legal residents of the US or Canada and are 18 years of age or older at the time of entry.</p>
 			  </div>
 <h3>Where is the competition located?</h3>
 			  <div>

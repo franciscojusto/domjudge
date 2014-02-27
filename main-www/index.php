@@ -27,7 +27,7 @@
     	<p>Our next competition is March 8 2014, 1-5pm</p>
         </div>
     </div>
-        <h4>Register for our <em>March 8, 2014</em> coding competition to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes</h4>
+        <h4>Register for our <em>March 8, 2014</em> coding competition to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
 		<br><br>
         <h3>What is UltiCoder?</h3>
         <p><em>UltiCoder</em> brings together bright minded people who compete as <b>individuals</b> remotely throughout the US and Canada solving tough coding problems in an ACM style competition awarding prizes to top performers.</p><br>
