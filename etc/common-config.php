@@ -34,6 +34,7 @@ define('DEBUG_PHP_NOTICE', 1); // Display PHP notice level warnings
 define('DEBUG_TIMINGS',    2); // Display timings for loading webpages
 define('DEBUG_SQL',        4); // Display SQL queries on webpages
 define('DEBUG_JUDGE',      8); // Display judging scripts debug info
+define('DJ_MYSQL_CONNECT_FLAGS', MYSQLI_CLIENT_SSL);
 
 define('DEBUG', 1);
 
