@@ -872,6 +872,8 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }  
+
+	//
 	$insert_query = 'update user set teamid= 
 			"' . $this->SanitizeForSQL($formvars['username']) . '"
 			 where username=
@@ -881,6 +883,7 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }  
+	//
 
         return true;
     }
