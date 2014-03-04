@@ -87,7 +87,7 @@
 		<div class='container'>
 			<label style="visibility:hidden">.</label>
 			<div class="input">
-			<?php echo recaptcha_get_html($publickey); ?>
+			<?php echo recaptcha_get_html($publickey,'',true); ?>
 			</div>
 		</div>
 		<div class='container'>
