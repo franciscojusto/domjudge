@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Rules - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css?ver=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="strip"></div>

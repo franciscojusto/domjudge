@@ -7,7 +7,7 @@
 	<style type="text/css">
     </style>
 	<script src="jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 <?php include("topnav.html");?>
 	<div class="content">
 	<div class="left" style="overflow:hidden"><iframe width="425" height="500" frameborder="0"
-	src="http://www.youtube.com/embed/9yQDGpX_7Zs?autoplay=0"></iframe>
+	src="https://www.youtube.com/embed/9yQDGpX_7Zs?autoplay=0"></iframe>
   	</div>
     <div class="right">
     <div class="registerbox">

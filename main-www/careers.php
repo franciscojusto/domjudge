@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<title>Careers - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css?ver=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
 	<script src="jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 	<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
 </head>
