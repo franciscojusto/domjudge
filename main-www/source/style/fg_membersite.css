@@ -5,13 +5,13 @@ You can customize all the aspects of the form in this style sheet
 
 #fg_membersite fieldset
 {
-   width: auto;
-   padding:20px;
-   border:1px solid #ccc;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
--khtml-border-radius: 10px;
-border-radius: 10px;   
+	width: auto;
+	padding: 20px;
+	border: 1px solid #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
 }
 
 #fg_membersite legend, #fg_membersite h2

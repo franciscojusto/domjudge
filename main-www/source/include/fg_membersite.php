@@ -863,7 +863,7 @@ class FGMembersite
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
-        }        
+        }       
 	$insert_query = 'insert into userrole (userid, roleid) values ('
 			 . $ret_userid . ','
 			 . 3 . ')';

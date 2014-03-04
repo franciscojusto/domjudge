@@ -35,7 +35,7 @@ Please enter the confirmation code in the box below
     <input type='text' name='code' id='code' maxlength="50" /><br/>
     <span id='register_code_errorloc' class='error'></span>
 </div>
-<div class='container'>
+<div class='container' style="margin-left:5px; margin-top:25px;">
     <input type='submit' name='Submit' value='Submit' />
 </div>
 

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Ulticoder!</title>
+	<title>FAQ - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	<link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
@@ -28,10 +28,10 @@
 
 	<?php include("topnav.html"); ?>
 
-    <div class="content">
 
 <fieldset>
 <legend>Frequently Asked Questions</legend>
+    <div class="content">
 		  <div id="accordion">
 			  <h3>How do I register for the competition?</h3>
 			  <div>
@@ -42,13 +42,12 @@ Simply visit our <a href="register.php">Registration</a> page to sign up. We wil
 <h3>Who is able to participate?</h3>
 			  <div>
 			    <p>
-Everyone is able to participate, but in order to receive prizes, the competitor must be a legal resident of the United States or Canada and cannot be a current or former employee of Ultimate Software.
-			    </p>
+			    The competition is open to contestants who are legal residents of the US or Canada and are 18 years of age or older at the time of entry.</p>
 			  </div>
 <h3>Where is the competition located?</h3>
 			  <div>
 			    <p>
-The practise competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
+The practice competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
 			    </p>
 			  </div>
 <h3>When is the competition?</h3>
@@ -86,10 +85,6 @@ Submissions will be accepted in Java 7, C, C++, Mono C#, Python (2.7), and Ruby 
 There will be opportunities to ask for clarifications. You can submit a clarification request for any problem or a piece of the system, and we will try to respond in a timely fashion. Please note that we cannot give any hints or insight into solutions. Should a wording in the problem statement be deemed ambiguous, all contestants will be notified of the clarification.
 			    </p>
 			  </div>
-<h3>Am I allowed to use the internet?</h3>
-			  <div>			    <p>
-You may access the internet for API reference only. The practise competition will not be proctored, but we highly recommend sticking to your knowledge and your language’s API website as the real competition will be.
-			    </p>			  </div>
 			  <h3>How are rankings determined?</h3>
 			  <div>
 			    <p>
@@ -105,5 +100,6 @@ The judging system will be similar to that of ACM. The contestants will be ranke
 
 </div>
 
+<?php include_once("analyticstracking.php") ?>
 </body>
 </html>

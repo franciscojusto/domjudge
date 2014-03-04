@@ -1,0 +1,102 @@
+@charset "UTF-8";
+#timeBox {
+	height: 100px;
+	width: 300px;
+	margin-bottom: 15px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+#daysWrapper {
+	width: 271px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+#days {
+	height: 20px;
+	width: 64px;
+	margin-right: 5px;
+	float: left;
+}
+#hours {
+	height: 20px;
+	width: 64px;
+	margin-right: 5px;
+	float: left;
+}
+#mins {
+	height: 20px;
+	width: 64px;
+	margin-right: 5px;
+	float: left;
+}
+#secs {
+	height: 20px;
+	width: 64px;
+	float: left;
+}
+#countdownBox {
+	width: 273px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#daysBox {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #CC3333;
+	float: left;
+	height: 30px;
+	width: 64px;
+	text-align: center;
+	margin-top: 0px;
+	border: 1px solid #ccc;
+	margin-right: 3px;
+	line-height: 30px;
+	display: block;
+}
+#hoursBox {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #CC3333;
+	float: left;
+	height: 30px;
+	width: 64px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 0px;
+	margin-right: 3px;
+	border: 1px solid #ccc;
+}
+#minsBox {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #CC3333;
+	float: left;
+	height: 30px;
+	width: 64px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 0px;
+	margin-right: 3px;
+	border: 1px solid #ccc;
+}
+#secsBox {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #CC3333;
+	float: left;
+	height: 30px;
+	width: 64px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 0px;
+	border: 1px solid #ccc;
+}

@@ -3,7 +3,7 @@
 	require_once('./include/recaptchalib.php');
 	require_once('./include/private_config.php');
 
-	if ($_POST['Submit']) {
+	if (array_key_exists('Submit', $_POST) && $_POST['Submit']) {
 		$resp = recaptcha_check_answer ($privatekey,
 				$_SERVER["REMOTE_ADDR"],
 				$_POST["recaptcha_challenge_field"],
@@ -118,8 +118,9 @@ Uses the excellent form validation script from JavaScript-coder.com-->
     frmvalidator.addValidation("email","email","Please provide a valid email address");
 
     frmvalidator.addValidation("username","req","Please provide a username");
-    frmvalidator.addValidation("username","alnum","Username may only consist of letters and/or numbers");
-    
+    frmvalidator.addValidation("username","alnum","Username may only consist of letters and/or numbers"); 
+    frmvalidator.addValidation("username","maxlen", "Username cannot be longer than 15 characters", 15);
+ 
     frmvalidator.addValidation("password","req","Please provide a password");
     
     frmvalidator.addValidation("password2","req","Please re-enter the password");
