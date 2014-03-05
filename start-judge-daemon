@@ -8,4 +8,19 @@ fi
 
 mkdir -p logs
 
-./judgehost/bin/judgedaemon &> logs/daemon.log &
+function test-start {
+	if [[ "$1" == "$2" || "$1" == "all" ]]; then
+		ID=`pgrep -f "judgedaemon $2"`
+		if [[ $? == 1 ]]; then
+			echo "starting $2 daemon."
+			cp "judgehost/etc/restapi.secret.$2" judgehost/etc/restapi.secret
+			php ./judgehost/bin/judgedaemon $2 &> "logs/daemon-$2.log" &
+		else
+			echo "$2 daemon already running as $ID"
+		fi
+	fi
+}
+
+test-start "$1" "local"
+test-start "$1" "test"
+test-start "$1" "main"
