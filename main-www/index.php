@@ -20,9 +20,14 @@
   	</div>
     <div class="right">
     <div class="registerbox">
+<a href="domjudge/public" class="button">
+<input type="submit" value="Enter" style="width:100%;height:120px;" class="center peter-river-flat-button">
+</a>
+<!--
     <form class="flat-button" action="register.php">
     <input type="submit" value="Register" class="flat-button">
     </form>
+-->
     	<div class="label">
     	<p>Our next competition is March 8 2014, 1-5pm</p>
         </div>

@@ -14,14 +14,15 @@ $fgmembersite->SetAdminEmail($p_admin_email);
 //hostname, user name, password, database name and table name
 //note that the script will create the table (for example, fgusers in this case)
 //by itself on submitting register.php for the first time
-$fgmembersite->InitDB(/*hostname*/'localhost',
+$fgmembersite->InitDB(  $p_hostname,
 			$p_dbusername,
 			$p_dbpassword,
-                      /*database name*/'domjudge',
-                      /*table name*/'user');
+                      /*database name*/$p_dbname,
+                      /*table name*/$p_tablename);
 
 //For better security. Get a random string from this link: http://tinyurl.com/randstr
 // and put it here
 $fgmembersite->SetRandomKey("$p_randomkey");
+
 
 ?>

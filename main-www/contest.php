@@ -5,6 +5,7 @@
 	<title>Contest - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
+<!--
     <script type="text/javascript">
 function cdtd() {
 	var xmas = new Date("March 8, 2014 13:00:00");
@@ -30,6 +31,7 @@ function cdtd() {
 }
 </script>
 <link href="timer.css" rel="stylesheet" type="text/css">
+-->
 </head>
 <body>
 <div id="strip"></div>
@@ -40,6 +42,7 @@ function cdtd() {
 
 <fieldset>
 <legend>Contest</legend>
+<!--
 <div id="timeBox">
 <h3>Our next competition begins in:</h3>
 <div id="daysWrapper">
@@ -56,7 +59,7 @@ function cdtd() {
 </div>
 
 </div>
-
+-->
 <script type="text/javascript">cdtd();</script>
 <div class="content">
 <a href="domjudge/public" class="button">
