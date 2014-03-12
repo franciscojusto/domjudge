@@ -597,7 +597,8 @@ class FGMembersite
         $validator->addValidation("email","req","Please fill in Email");
         $validator->addValidation("username","req","Please fill in UserName");
 	$validator->addValidation("username","alnum","UserName must only consist of letters and numbers");
-        $validator->addValidation("password","req","Please fill in Password");
+        $validator->addValidation("username","maxlen=15","Username cannot be longer than 15 characters");
+	$validator->addValidation("password","req","Please fill in Password");
         $validator->addValidation("password2","req","Please fill in Password");
         
         if(!$validator->ValidateForm())

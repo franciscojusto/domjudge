@@ -63,7 +63,7 @@
 		<div class='container'>
 		    <label for='username' >UserName*:</label>
 			<div class="input">
-		    <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>
+		    <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' /><br/> <!--maxlength="50"-->
 		    <span id='register_username_errorloc' class='error'></span>
 			</div>
 		</div>
@@ -119,7 +119,7 @@ Uses the excellent form validation script from JavaScript-coder.com-->
 
     frmvalidator.addValidation("username","req","Please provide a username");
     frmvalidator.addValidation("username","alnum","Username may only consist of letters and/or numbers"); 
-    frmvalidator.addValidation("username","maxlen", "Username cannot be longer than 15 characters", 15);
+    frmvalidator.addValidation("username","maxlen=15", "Username cannot be longer than 15 characters");
  
     frmvalidator.addValidation("password","req","Please provide a password");
     
