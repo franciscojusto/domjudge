@@ -1,0 +1,43 @@
+Algorithm:
+(Example)
+2   3
++ - +
+|   |
++ - +
+0   1
+
+1. Intersections matrix
+a. mark all intersections:
+0 1 1 0
+1 0 0 1
+1 0 0 1
+0 1 1 0
+
+b. add self ref:
+1 1 1 0
+1 1 0 1
+1 0 1 1
+0 1 1 1
+
+c. Remove intersections:
+1 1 1 0
+1 1 0 0
+1 0 1 1
+0 0 1 1
+
+2. Traverse matrix
+Iterate over list n times
+Keep record of path count (update paths matrix)
+Use k as a pivot to determine: paths[i, k] and paths[j, k]
+
+----------------------------------------------------------------------------------------------------------
+Test Cases:
+
+problem input
+
+Boundaries (matrix size [2 <= n <= 8]): 2, 3, 5, 7, 8
+- Without blocked streets
+- With blocked streets
+- no intersections
+- dead ends
+

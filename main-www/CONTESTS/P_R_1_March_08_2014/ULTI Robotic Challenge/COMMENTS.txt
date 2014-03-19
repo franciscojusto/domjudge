@@ -1,0 +1,22 @@
+Include the sample data (of course)
+Timing breakers: root goes to all other nodes, all other nodes are root that point to another
+All nodes are their own component
+Single cycle
+316 independent roots, but everything else connected
+Single gate and single edge cases
+Most possible complete graph
+Straight line case
+Two separate components, each with their own real case
+Make sure sums go above integer value
+Make best possible equal 0
+Include case where final gate is huge, first gate is 1, and everything in between is 0 (eliminate greedy possibilities)
+
+Test cases 1-2: Sample data (40, 4)
+Test cases 3-4: Straight lines (4999950000 x2)
+Test cases 5-7: Single cycle (varying sizes: 4, 100, 100000) (80, 2000, 2000000)
+Test cases 8-9: Timing breakers (2, 2)
+Test case 10: Each node own component (9001)
+Test case 11: Single gate case (1)
+Test case 12: Single edge case (3)
+Test case 13: Complete graph with 447 gates (overflows int) (447000000000)
+Test case 14: Separate components (20)
