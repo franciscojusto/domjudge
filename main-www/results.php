@@ -115,7 +115,7 @@
 											$output = $output.$TAB;
 											}
 											
-										$output = $output."<a href=\"CONTESTS/".$like."/".$problem_folders[$k]."/".$problem_files[$j]."\">".$cur_file[0]."</a>"; 
+										$output = $output."<a href=\"CONTESTS/".$like."/".$problem_folders[$k]."/".$problem_files[$j]."\" target=\"_break\">".$cur_file[0]."</a>"; 
 										 
 									}
 									
