@@ -13,26 +13,28 @@
 
 <div id="strip"></div>
 <div id="container">
+
 <?php include("topnav.html");?>
+
 	<div class="content">
+<h4 style="float:left; display:block; width:100%; padding:10px; text-align:center;background-color:#5CA616; box-shadow: 2px 2px 2px   #888;">
+  Congratulations to our top 3 contest winners sroyal, mkirsche and edorundo!
+</h4>
 	<div class="left" style="overflow:hidden"><iframe width="425" height="500" frameborder="0"
 	src="https://www.youtube.com/embed/9yQDGpX_7Zs?autoplay=0"></iframe>
   	</div>
     <div class="right">
     <div class="registerbox">
+<!--
 <a href="domjudge/public" class="button">
 <input type="submit" value="Enter" style="width:100%;height:120px;" class="center peter-river-flat-button">
 </a>
-<!--
-    <form class="flat-button" action="register.php">
+-->
+    <form class="flat-button" action="register.php" style="margin-bottom:10px">
     <input type="submit" value="Register" class="flat-button">
     </form>
--->
-    	<div class="label">
-    	<p>Our next competition is March 8 2014, 1-5pm</p>
-        </div>
     </div>
-        <h4>Register for our <em>March 8, 2014</em> coding competition to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
+        <h4>Register for our next coding competition to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
 		<br><br>
         <h3>What is UltiCoder?</h3>
         <p><em>UltiCoder</em> brings together bright minded people who compete as <b>individuals</b> remotely throughout the US and Canada solving tough coding problems in an ACM style competition awarding prizes to top performers.</p><br>
