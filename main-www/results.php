@@ -33,7 +33,7 @@
 		  <div id="accordion">
 			  	<?php 
 				chdir('CONTESTS');
-				$TAB = "&nbsp;&nbsp;&nbsp;";
+				$TAB = "   ";
 				//4 files per problem : input, output, pdf, and result
 				//find number of folders that contain "P_R_" in the name. 
 				//for every one of those folders, the contents will be listed as links  
@@ -103,7 +103,7 @@
 											}  
 								}
 								
-								$output = $output."<p><div style=\"width:190px;float:left;\"> ".$problem_folders[$k]." : </div></p>"; 
+								$output = $output."<div style=\"overflow:hidden; margin-bottom:20px\"> <div style=\"width:30%;float:left;\"> ".$problem_folders[$k]." : </div><div style=\"width:70%; float:left;\">"; 
 									
 									//OUTPUTS FILES WITHIN THE PROBLEM FOLDERS
 									for($j=2; $j < count($problem_files);$j++)
@@ -115,11 +115,11 @@
 											$output = $output.$TAB;
 											}
 											
-										$output = $output."<a href=\"CONTESTS/".$like."/".$problem_folders[$k]."/".$problem_files[$j]."\" target=\"_break\">".$cur_file[0]."</a>"; 
+										$output = $output."<a style=\"margin:5px\" href=\"CONTESTS/".$like."/".$problem_folders[$k]."/".$problem_files[$j]."\" target=\"_break\">".$cur_file[0]."</a>"; 
 										 
 									}
 									
-								$output = $output."<br/><br/>";
+								$output = $output."</div></div>";
 								 
 							} 
 						/*
