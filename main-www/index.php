@@ -18,7 +18,7 @@
 
 	<div class="content">
 <h4 style="float:left; display:block; width:98%; padding:1%; text-align:center;background-color:#5CA616; box-shadow: 2px 2px 2px   #888;">
-  Congratulations to our top 3 contest winners sroyal, mkirsche and edorundo!
+  Congratulations to our March 8th contest winners sroyal, mkirsche and edorundo!
 </h4>
 	<div class="left" style="overflow:hidden"><iframe width="425" height="500" frameborder="0"
 	src="https://www.youtube.com/embed/9yQDGpX_7Zs?autoplay=0"></iframe>
