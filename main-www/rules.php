@@ -105,6 +105,11 @@ Caution: Any attempt by a contestant to deliberately damage any Web site or unde
 <br>
 <p>Failure to comply with any of the Terms will be cause for disqualification.<br>
 All decisions of Ultimate Software in these matters are final and binding. </p>
+
+<br>
+<p>Ultimate Software will post the answers to the problem on <a href="results.php" target="_break">Previous Contests</a> after the conclusion of the contest.   Participant acknowledges that Ultimate Software will have no liability in the event a typographical or other errors in the administration of or relating to the Contest, including but not limited to the announcement of the winners or the answers.</p>
+<br>
+
 <p>By participating in this Contest, each entrant agrees to fully release, forever discharge and hold harmless Ultimate Software from and against all claims, costs, liabilities, losses, injuries, and damages arising out of the Contest, including, but not limited to, attorney’s fees and costs, any claims for personal injury, death or damage to or loss of property or any other harm arising out of entrant’s participation in the Contest, the receipt, use, or misuse of any prize, or any travel or activity that is related to the Contest or any prize.</p>
 <br>
 
