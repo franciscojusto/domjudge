@@ -23,12 +23,6 @@ require_once("class.smtp.php");
 require_once("formvalidator.php");
 require_once("private_config.php");
 
-define('IN_PHPBB', true);
-$phpEx = substr(strrchr(__FILE__, '.'), 1);
-$phpbb_root_path = $_SERVER['DOCUMENT_ROOT'].'/forum/';
-require($phpbb_root_path."/includes/functions_user.".$phpEx);
-require($phpbb_root_path."common.".$phpEx);
-
 class FGMembersite
 {
     var $admin_email;
@@ -96,22 +90,10 @@ class FGMembersite
         if(!$this->SendUserConfirmationEmail($formvars)) return false;
         if(!$this->SaveToDatabase($formvars)) return false;
 
-        //register here for forum!
-        $user_type = USER_NORMAL;
-        $user_row = array(
-            'username'   =>  $formvars['username'],
-            'user_email' =>  $formvars['email'],
-            'user_password' => phpbb_hash($formvars['password']),
-            'group_id'   => 2,
-            'user_type'  => $user_type,
-            'user_ip'    => $_SERVER['REMOTE_ADDR'],
-            'user_regdate'  => time(),
-            'user_lang'  => 'en',
-            );
         $this->SendAdminIntimationEmail($formvars);
-	    $user_id = user_add($user_row);
+        
         return true;
-        }
+    }
 
     function ConfirmUser()
     {
@@ -157,7 +139,7 @@ class FGMembersite
         }
         
         $_SESSION[$this->GetLoginSessionVar()] = $username;
-
+        
         return true;
     }
     
@@ -550,7 +532,7 @@ class FGMembersite
                 '/resetpwd.php?email='.
                 urlencode($email).'&code='.
                 urlencode($this->GetResetPasswordCode($email));
-	echo ($link);
+
         $mailer->Body ="Hello ".$user_rec['name']."\r\n\r\n".
         "There was a request to reset your password at ".$this->sitename."\r\n".
         "Please click the link below to complete the request: \r\n".$link."\r\n".
@@ -563,7 +545,6 @@ class FGMembersite
             return false;
         }
         return true;
-
     }
     
     function SendNewPassword($user_rec, $new_password)
@@ -647,8 +628,6 @@ class FGMembersite
         $formvars['username'] = $this->Sanitize($_POST['username']);
         $formvars['password'] = $this->Sanitize($_POST['password']);
         $formvars['password2'] = $this->Sanitize($_POST['password2']);
-
-
     }
     
     function SendUserConfirmationEmail(&$formvars)

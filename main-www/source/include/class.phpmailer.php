@@ -396,7 +396,7 @@ class PHPMailer {
     $this->SetMessageType();
     $header .= $this->CreateHeader();
     $body = $this->CreateBody();
-    
+
     if($body == '') {
       return false;
     }
@@ -419,7 +419,7 @@ class PHPMailer {
         //$result = false;
         //break;
     }
-	
+
     return $result;
   }
 
@@ -460,7 +460,7 @@ class PHPMailer {
    * @return bool
    */
   function MailSend($header, $body) {
-	
+
     $to = '';
     for($i = 0; $i < count($this->to); $i++) {
       if($i != 0) { $to .= ', '; }
