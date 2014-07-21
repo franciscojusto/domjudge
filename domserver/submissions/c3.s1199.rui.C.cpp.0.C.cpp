@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+#include <string>
+#include <limits>
+
+using namespace std;
+// 1 to 100
+int C, S, Q;
+bool path[102][102];
+int sound[102][102];
+const int LARGE = std::numeric_limits<int>::max();
+
+int main () {
+	//freopen("C.in.txt","r",stdin);
+	
+	int cc=1;
+	while (cin >> C>>S>>Q) {
+		if (C == 0 && S == 0 && Q == 0) return 0;
+		if (cc>1) cout << endl ;//<< endl;
+		
+		for(int i=0;i<102;i++)
+			for (int j=0;j<102;j++) {
+				path[i][j] = false;
+				sound[i][j] = LARGE;
+			}
+				
+		for (int i=0;i<S;i++) {
+			int a,b,c; cin >>a>>b>>c;
+			sound[a][b] = sound[b][a] = c;
+			path[a][b] = path[b][a] = true;
+		}
+		for (int i=1;i<=C;i++) 
+			for (int j=1;j<=C;j++) 
+				for (int k=1;k<=C;k++) 
+					if (i != j && j != k)
+					if (path[i][j] && path[j][k]) {
+						sound[k][i] = sound[i][k] = min(sound[k][i],min(sound[i][k], max(sound[i][j],sound[j][k])));
+						path[i][k] = path[k][i] = true;
+					}
+		/*for (int i=1;i<=C;i++) {
+			for (int j=1;j<=C;j++) {
+				cout << "i,j" << i << "," << j << " " << path[i][j] << " " << sound[i][j]<< endl;
+		}
+		}*/
+		cout << "Case #" << cc << endl;		
+		for (int i=0;i<Q;i++) {
+			int a,b; cin>>a>>b;
+			if (path[a][b]) {
+				cout << sound[a][b] << endl;
+				//if (i!=Q-1) cout << endl;
+			}
+			else
+				cout << "no path" << endl;
+		}
+		cc++;
+	}	
+	
+}

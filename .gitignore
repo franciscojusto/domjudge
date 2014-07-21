@@ -8,7 +8,6 @@ aclocal.m4
 bin/
 output/
 judgehost/
-domserver/
 logs/
 cov-int
 domjudge-scan.tgz

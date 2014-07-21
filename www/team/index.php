@@ -122,6 +122,7 @@ $clarifications = $DB->q('SELECT c.*, u.type AS unread FROM clarification c
                           $teamid, $cid, $teamid);
 
 echo "<h3 class=\"teamoverview\">Clarifications</h3>\n";
+echo "<p> Home Page </p>";
 
 # FIXME: column width and wrapping/shortening of clarification text
 if ( $clarifications->count() == 0 ) {
@@ -144,5 +145,6 @@ echo addForm('clarification.php','get') .
 
 
 echo "</div>\n";
+
 
 require(LIBWWWDIR . '/footer.php');

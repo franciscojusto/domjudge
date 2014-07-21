@@ -2,7 +2,6 @@
 <a href="../../index.php" accesskey="h">home</a>
 <a href="../public/index.php" accesskey="h">contest home</a>
 <a target="_top" href="index.php" accesskey="o">overview</a>
-
 <?php
 
 if ( have_problemtexts() ) {
