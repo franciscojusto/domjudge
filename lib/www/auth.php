@@ -10,6 +10,7 @@
  * under the GNU GPL. See README and COPYING for details.
  */
 
+
 $ip = $_SERVER['REMOTE_ADDR'];
 
 $teamid = NULL;
@@ -17,6 +18,7 @@ $username = NULL;
 $teamdata = NULL;
 $userdata = NULL;
 
+require($_SERVER['DOCUMENT_ROOT'].'/forum/auth.php');
 // Check if current user has given role, or has superset of this role's
 // privileges
 function checkrole($rolename, $check_superset = TRUE) {
@@ -121,14 +123,15 @@ function show_failed_login($msg)
 	require(LIBWWWDIR . '/header.php');
 	echo "<h1>Not Authenticated</h1>\n\n<p>$msg</p>\n\n";
 	?>
-	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-	<input type="hidden" name="cmd" value="login" />
+<form id="signin" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+    <input type="hidden" name="cmd" value="login" />
 	<table>
-	<tr><td><label for="login">Login:</label></td><td><input type="text" id="login" name="login" value="" size="15" maxlength="15" accesskey="l" autofocus /></td></tr>
-	<tr><td><label for="passwd">Password:</label></td><td><input type="password" id="passwd" name="passwd" value="" size="15" maxlength="255" accesskey="p" /></td></tr>
-	<tr><td></td><td><input type="submit" value="Login" /></td></tr>
-	</table>
-	</form>
+    <tr><td><label for="username">Username:</label></tr></td><tr><td><input type="text" name="username" size="15"></tr></td>
+    <tr><td><label for="password">Password:</label></tr></td><tr><td><input type="password" name="password" size="15"></tr></td>
+    <tr><td><input type="submit" value="Submit" name="login"></tr></td>
+    </table>
+</form>
+<a href="forgot-password.php">Forgot Password</a> | <a href="forgot-username.php">Forgot Username</a>
 	<?
 	putDOMjudgeVersion();
 	require(LIBWWWDIR . '/footer.php');
@@ -158,21 +161,21 @@ function show_loginpage()
 
 		include(LIBWWWDIR . '/header.php');
 		?>
+
 <h1>Not Authenticated</h1>
 
 <p>
-Please supply your credentials below, or contact a staff member for assistance.
+    Please supply your credentials below, or contact a staff member for assistance.
 </p>
-
-<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-<input type="hidden" name="cmd" value="login" />
-<table>
-<tr><td><label for="login">Login:</label></td><td><input type="text" id="login" name="login" value="" size="15" maxlength="15" accesskey="l" autofocus /></td></tr>
-<tr><td><label for="passwd">Password:</label></td><td><input type="password" id="passwd" name="passwd" value="" size="15" maxlength="255" accesskey="p" /></td></tr>
-<tr><td></td><td><input type="submit" value="Login" /></td></tr>
-</table>
+<form id="signin" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+    <input type="hidden" name="cmd" value="login" />
+	<table>
+    <tr><td><label for="username">Username:</label></tr></td><tr><td><input type="text" name="username" size="15"></tr></td>
+    <tr><td><label for="password">Password:</label></tr></td><tr><td><input type="password" name="password" size="15"></tr></td>
+    <tr><td><input type="submit" value="Submit" name="login"></tr></td>
+    </table>
 </form>
-
+<a href="forgot-password.php">Forgot Password</a> | <a href="forgot-username.php">Forgot Username</a>
 <?php
 		putDOMjudgeVersion();
 		include(LIBWWWDIR . '/footer.php');
@@ -239,8 +242,8 @@ function do_login()
 	// some specializations are handled by if-statements.
 	case 'IPADDRESS':
 	case 'PHP_SESSIONS':
-		$user = trim($_POST['login']);
-		$pass = trim($_POST['passwd']);
+		$user = trim($_POST['username']);
+		$pass = trim($_POST['password']);
 
 		$title = 'Authenticate user';
 		$menu = false;
@@ -264,8 +267,8 @@ function do_login()
 		break;
 
 	case 'LDAP':
-		$user = trim($_POST['login']);
-		$pass = trim($_POST['passwd']);
+		$user = trim($_POST['username']);
+		$pass = trim($_POST['password']);
 
 		$title = 'Authenticate user';
 		$menu = false;
@@ -301,7 +304,7 @@ function do_login()
 		error("Unknown authentication method '" . AUTH_METHOD .
 		      "' requested, or login not supported.");
 	}
-
+	loginForum();
 	// Authentication success. We could just return here, but we do a
 	// redirect to clear the POST data from the browser.
 	$script = ($_SERVER['PHP_SELF']);
@@ -378,7 +381,8 @@ function do_logout()
 		error("Unknown authentication method '" . AUTH_METHOD .
 		      "' requested, or logout not supported.");
 	}
-
+	logoutForum();
+	//Oage below not shown due to redirects for forum logout
 	$title = 'Logout';
 	$menu = FALSE;
 	auditlog('user', @$userdata['userid'], 'logged out', $ip);

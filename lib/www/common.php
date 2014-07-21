@@ -359,6 +359,7 @@ function putClock() {
 		echo "<br /><span id=\"username\">logged in as " . $username
 			. ( have_logout() ? " <a href=\"../logout.php\">×</a>" : "" )
 			. "</span>";
+		echo "<br /><span id=\"change-password\"><a href=\"../public/change-password.php\">Change Password</a>" . "</span>";
 	}
 	echo "</div>";
 
