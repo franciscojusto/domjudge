@@ -1,21 +1,17 @@
-
 	
 <!DOCTYPE html PUBLIC "~//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 	<title>Forgot Password</title>
-	<script type='text/javascript' src='../../../main-www/source/scripts/gen_validatorv,js'></script>
 </head>
 <body>
 	<h1>Forgot Password</h1>		
 	<?php
 	require_once("../../../main-www/source/include/class.phpmailer.php");	
 	require_once("../../../main-www/source/include/class.smtp.php");
-//	require_once("../../../main-www/source/include/membersite_config.php");
 	require_once("../../../main-www/source/include/private_config.php");
 	require_once("../../../main-www/source/include/formvalidator.php");
-//	include("../../../main-www/source/include/fg_membersite.php");
 	require_once("init.php");
 	$message ="";
 	$sent = false;
@@ -38,15 +34,6 @@
 			echo $error."</br>";
 			$validform = false;
 		}
-		//var frmvalidator = new Validator("forgot-password");
-		/*if (!frmvalidator.validate_email($_POST['email'])) //Validate email
-		{
-			$message = "Invalid email please type a valid email.";
-			echo "here";
-		}
-		else
-		{
-			var_dump($_POST);*/
 		if($validform)
 		{	
 			$email = $_POST['email'];	
@@ -98,11 +85,6 @@
 		{
 			echo $message;
 		}
-		/*if($sent)
-		{
-			echo "</br></br><a href='login.php'>Login</a></br>";
-		}*/
-		//exit();
 	}  // End of $_POST['email'] IF
 	?>
 	<p>Please enter your email to have a temporary password sent to you.</p>
@@ -125,11 +107,4 @@
 	</br>
 	<a href='login.php'>Login</a> | <a href='forgot-username.php'>Forgot Username</a>
 
-<script type='text/javascript'>
-	var frmvalidator = new Validator("forgot-password");
-	frmvalidator.EnableOnPageErrorDisplay();
-	frmvalidator.EnableMsgsTogether();
-	frmvalidator.addValidation("email", "req", "Please provide your email address");
-	frmvalidator.addValidation("email", "email", "Please provide a valid email address");
-</script>
 </body>

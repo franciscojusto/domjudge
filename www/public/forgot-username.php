@@ -3,17 +3,14 @@
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 	<title>Forgot Username</title>
-	<script type='text/javascript' src='../../../main-www/source/scripts/gen_validator31.js'></script>
 </head>
 <body>
 	<h1>Forgot Username</h1>		
 	<?php
 	require_once("../../../main-www/source/include/class.phpmailer.php");	
 	require_once("../../../main-www/source/include/class.smtp.php");
-//	require_once("../../../main-www/source/include/membersite_config.php");
 	require_once("../../../main-www/source/include/private_config.php");
 	require_once("../../../main-www/source/include/formvalidator.php");
-//	include("../../../main-www/source/include/fg_membersite.php");
 
 	require_once("init.php");
 	$message ="";
@@ -31,18 +28,11 @@
 			{
 				$error .= $inpname.':'.$inp_err."\n";
 			}
-			//$this->HandleError($error);
-		/*	var_dump($error);
-			foreach($error as &$err)
-			{*/
-				echo $error."</br>";
-		//	}
+			echo $error."</br>";
 			$validform = FALSE;
 		}
-		/*else
-		{
-			var_dump($_POST);*/
-		if($validform)//filter_var($_POST['email']))//if($_POST['email'] != "")
+
+		if($validform)
 		{
 			$email = $_POST['email'];	
 			$query = $DB->q('table select * from user where email=%s', $email);
@@ -81,15 +71,12 @@
 				$message = "The submitted email address does not match any on file.";
 			}
 		}
-		/*else
-		{
-			$message = "Please enter your email";
-		}*/
+		
 	if($message != "")
 	{
 		echo $message;
 	}
-	//exit();
+	
 	}  // End of $_POST['email'] IF
 	?>
 	<p>Please enter your email to have your username sent to you.</p>

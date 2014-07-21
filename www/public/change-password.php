@@ -13,7 +13,7 @@
 
 <?php
 require('init.php');
-//include('../../../main-www/source/include/fg_membersite.php');
+
 
 $pass_errors = array();
 
@@ -66,7 +66,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 		
 				echo '<h2>Your password has been changed.</h2>';
 				echo "</br><a href='index.php'>Home</a></br>";
-			//	require(LIBWWWDIR . '/footer.php');
 				exit();
 		}
 		
