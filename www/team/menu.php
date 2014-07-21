@@ -17,10 +17,8 @@ echo "<a target=\"_top\" href=\"scoreboard.php\" accesskey=\"b\">scoreboard</a>\
 if ( checkrole('jury') || checkrole('balloon') ) {
 	echo "<a target=\"_top\" href=\"../jury/\" accesskey=\"j\">→jury</a>\n";
 }
-
+echo '<a href ="../../forum">forum</a>';
 echo "</div>\n\n<div id=\"menutopright\">\n";
-
 putClock();
-
 echo "</div></nav>\n\n";
 ?>
