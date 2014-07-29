@@ -66,6 +66,9 @@ if (isset($_POST['confirm'] ) ) {
 
 	// LIMIT 1 is a security measure to prevent our bugs from
 	// wiping a table by accident.
+	$uid = $k['userid'];
+	$uname = $DB->q("maybevalue select username from user where userid = %i LIMIT 1", $uid);
+	$DB->q("DELETE FROM phpbb_users where username = %s LIMIT 1", $uname);
 	$DB->q("DELETE FROM $t WHERE %S LIMIT 1", $k);
 	auditlog($t, implode(', ', $k), 'deleted');
 

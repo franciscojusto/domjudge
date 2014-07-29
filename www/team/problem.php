@@ -7,9 +7,13 @@
  */
 
 require('init.php');
-
-// download a given problem statement
+require("../../../lib/ext/PDFMerger/PDFMerger.php");
 $id = @$_REQUEST['id'];
+if (strpos($id,'ALL') !== false) {
+    putAllProblems();
+    exit;
+}
+
 if ( preg_match('/^' . IDENTIFIER_CHARS . '+$/', $id) ) {
 	putProblemText($id);
 	exit;

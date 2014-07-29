@@ -292,7 +292,7 @@ function renderScoreBoardTable($cdata, $sdata, $myteamid = null, $static = FALSE
 	$SHOW_AFFILIATIONS = dbconfig_get('show_affiliations', 1);
 	$SHOW_PENDING      = dbconfig_get('show_pending', 0);
 
-	echo '<table class="scoreboard' . (IS_JURY ? ' scoreboard_jury' : '') . ($center ? ' center' : '') . "\">\n";
+	echo '<table style="margin:0px auto;" id="all_scores" class="scoreboard' . (IS_JURY ? ' scoreboard_jury' : '') . ($center ? ' center' : '') . "\">\n";
 
 	// output table column groups (for the styles)
 	echo '<colgroup><col id="scorerank" />' .
@@ -524,10 +524,10 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 	$sdata = genScoreBoard($cdata, IS_JURY, $filter);
 
 	// page heading with contestname and start/endtimes
-	echo "<h1>Scoreboard " . htmlspecialchars($cdata['contestname']) . "</h1>\n\n";
+	echo "<h1 style='text-align:center'>Scoreboard " . htmlspecialchars($cdata['contestname']) . "</h1>\n\n";
 
 	if ( $fdata['showfinal'] ) {
-		echo "<h4>final standings</h4>\n\n";
+		echo "<h4 style='text-align:center'>final standings</h4>\n\n";
 	} elseif ( ! $fdata['cstarted'] ) {
 		echo "<h4>" . printContestStart($cdata) . "</h4>\n\n";
 		// Stop here (do not leak problem number, descriptions etc).
@@ -572,7 +572,7 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 		require_once(LIBWWWDIR . '/forms.php');
 		?>
 
-<table class="scorefilter">
+<table style="margin:0px auto;" class="scorefilter">
 <tr>
 <td><a href="javascript:collapse('filter')"><img src="../images/filter.png" alt="filter&hellip;" title="filter&hellip;" class="picto" /></a></td>
 <td><div id="detailfilter">

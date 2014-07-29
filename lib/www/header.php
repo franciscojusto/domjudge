@@ -37,6 +37,8 @@ if(!isset($menu)) {
 <title><?php echo $title?></title>
 <link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="../style.css" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/oneSimpleTablePaging-1.0.js"></script>
 <?php
 if ( IS_JURY ) {
 	echo "<link rel=\"stylesheet\" href=\"style_jury.css\" type=\"text/css\" />\n";

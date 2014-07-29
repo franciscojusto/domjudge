@@ -9,4 +9,7 @@ if ( DEBUG & DEBUG_TIMINGS ) {
 } ?>
 
 </body>
+<script>
+$('#all_scores').oneSimpleTablePagination({rowsPerPage: 35});
+</script>
 </html>
