@@ -874,8 +874,19 @@ class FGMembersite
             return false;
         }        
 	$ret_userid = mysql_insert_id($this->connection);
+	
+	// Insert userrole
+	$insert_query = 'insert into userrole (userid, roleid) values ('
+			 . $ret_userid . ','
+			 . 3 . ')';
+        if(!mysql_query( $insert_query ,$this->connection))
+        {
+            $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
+            return false;
+        }  
 
-	// Autocreate team and userrole
+	// -- INDIVIDUAL TEAMS
+	// Autocreate team and insert user into team
 	$insert_query = 'insert into team (login, name, categoryid, enabled) values (
 			 "' . $this->SanitizeForSQL($formvars['username']) . '",
 			 "' . $this->SanitizeForSQL($formvars['username']) . '",
@@ -886,16 +897,7 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }       
-	$insert_query = 'insert into userrole (userid, roleid) values ('
-			 . $ret_userid . ','
-			 . 3 . ')';
-        if(!mysql_query( $insert_query ,$this->connection))
-        {
-            $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
-            return false;
-        }  
 
-	//
 	$insert_query = 'update user set teamid= 
 			"' . $this->SanitizeForSQL($formvars['username']) . '"
 			 where username=
@@ -905,7 +907,7 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }  
-	//
+	// -- INDIVIDUAL TEAMS
 
         return true;
     }
