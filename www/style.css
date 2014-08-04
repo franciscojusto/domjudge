@@ -10,6 +10,9 @@ img {	border: 0; }
 	font-weight: bold;
 	font-variant: small-caps;
 }
+ .inlineTable {
+            float: left;
+ }
 
 .sol_correct      { color: green;  }
 .sol_incorrect    { color: red;    }
@@ -32,6 +35,15 @@ a:active          { color: red;    }
 .disabled         { color: silver; }
 .disabled a       { color: gray;   }
 .disabled .circle {
+	opacity: 0.2;
+	/* what follows is for IE-compatibility */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=20);
+}
+
+.merged         { color: #0510E7; }
+.merged a       { color: #0510E7;   }
+.merged .circle {
 	opacity: 0.2;
 	/* what follows is for IE-compatibility */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
@@ -95,6 +107,7 @@ td {
 	padding-right: 5px;
 }
 .list .disabled a  { color: silver;   }
+.list .merged a { color: #0510E7;}
 .list .editdel  a  { display: inline; }
 
 .output_text {

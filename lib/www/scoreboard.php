@@ -292,7 +292,7 @@ function renderScoreBoardTable($cdata, $sdata, $myteamid = null, $static = FALSE
 	$SHOW_AFFILIATIONS = dbconfig_get('show_affiliations', 1);
 	$SHOW_PENDING      = dbconfig_get('show_pending', 0);
 
-	echo '<table class="scoreboard' . (IS_JURY ? ' scoreboard_jury' : '') . ($center ? ' center' : '') . "\">\n";
+	echo '<table style="margin:0px auto;" id="all_scores" class="scoreboard' . (IS_JURY ? ' scoreboard_jury' : '') . ($center ? ' center' : '') . "\">\n";
 
 	// output table column groups (for the styles)
 	echo '<colgroup><col id="scorerank" />' .
@@ -458,11 +458,11 @@ function renderScoreBoardTable($cdata, $sdata, $myteamid = null, $static = FALSE
 	echo "</table>\n\n";
 
 	if ( $showlegends ) {
-		echo "<p><br /><br /></p>\n";
+		echo "<p><br /></p>\n";
 
 		// only print legend when there's more than one category
 		if ( empty($limitteams) && count($categs) > 1 ) {
-			echo "<table id=\"categ_legend\" class=\"scoreboard scorelegend" .
+			echo "<div style=\"width:100%;text-align:center\">\n<table id=\"categ_legend\" class=\"scoreboard scorelegend" .
 			    (IS_JURY ? ' scoreboard_jury' : '') . "\">\n" .
 			    "<thead><tr><th scope=\"col\">" .
 			    jurylink('team_categories.php','Categories') .
@@ -494,7 +494,7 @@ function renderScoreBoardTable($cdata, $sdata, $myteamid = null, $static = FALSE
 			echo '<tr class="score_' . $color . '">' .
 			    '<td>' . jurylink(null, $desc) . "</td></tr>\n";
 		}
-		echo "</tbody>\n</table>\n\n";
+		echo "</tbody>\n</table>\n\n</div>";
 	}
 
 	return;
@@ -524,17 +524,17 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 	$sdata = genScoreBoard($cdata, IS_JURY, $filter);
 
 	// page heading with contestname and start/endtimes
-	echo "<h1>Scoreboard " . htmlspecialchars($cdata['contestname']) . "</h1>\n\n";
+	echo "<h1 style='text-align:center'>Scoreboard " . htmlspecialchars($cdata['contestname']) . "</h1>\n\n";
 
 	if ( $fdata['showfinal'] ) {
-		echo "<h4>final standings</h4>\n\n";
+		echo "<h4 style='text-align:center'>Final Standings</h4>\n\n";
 	} elseif ( ! $fdata['cstarted'] ) {
-		echo "<h4>" . printContestStart($cdata) . "</h4>\n\n";
+		echo "<h4 style='text-align:center'> " . printContestStart($cdata) . "</h4>\n\n";
 		// Stop here (do not leak problem number, descriptions etc).
 		// Alternatively we could only display the list of teams?
 		if ( ! IS_JURY ) return;
 	} else {
-		echo "<h4>starts: " . printtime($cdata['starttime']) .
+		echo "<h4 style='text-align:center'>starts: " . printtime($cdata['starttime']) .
 				" - ends: " . printtime($cdata['endtime']) ;
 
 		if ( $fdata['showfrozen'] ) {
@@ -544,7 +544,7 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 			}
 			echo "frozen since " . printtime($cdata['freezetime']) .")";
 		}
-		echo "</h4>\n\n";
+		echo "</h4 style='text-align:center'>\n\n";
 	}
 
 	// The static scoreboard does not support filtering
@@ -572,7 +572,7 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 		require_once(LIBWWWDIR . '/forms.php');
 		?>
 
-<table class="scorefilter">
+<table style="margin:0px auto;" class="scorefilter">
 <tr>
 <td><a href="javascript:collapse('filter')"><img src="../images/filter.png" alt="filter&hellip;" title="filter&hellip;" class="picto" /></a></td>
 <td><div id="detailfilter">

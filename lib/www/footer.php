@@ -9,4 +9,7 @@ if ( DEBUG & DEBUG_TIMINGS ) {
 } ?>
 
 </body>
+<script>
+$('#all_scores').tablePagination({});
+</script>
 </html>

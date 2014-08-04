@@ -1,4 +1,5 @@
 <?php
+ini_set("session.auto_start", 0);
 /**
  * Common functions shared between team/public/jury interface
  *
@@ -497,10 +498,42 @@ function putProblemTextList()
 				      'Problem ' . htmlspecialchars($row['probid']) . ': ' .
 				      htmlspecialchars($row['name']) . "</a></li>\n";
 			}
+			print '<li> '.
+			      '<img src="../images/' . urlencode('pdf') .
+			      '.png" alt="' . htmlspecialchars('pdf') .
+			      '" /> <a href="?id=ALL-'.$cid.'">' .
+			      'All Problems</a></li>';
 			echo "</ul>\n";
+		
 		}
 	}
 }
+
+/**
+ * Outputs link + id for ALL problems single pdf
+ */
+function putAllProblems()
+{
+	global $cid, $cdata, $DB;
+	$rid = $DB->q("table select probid from problem where cid = %i and allow_submit = 1", $cid);
+	$fileNames = array();
+	$pdf = new PDFMerger;
+	foreach($rid as $id)
+	{
+		$pid = $id['probid'];
+		$row = $DB->q("maybetuple SELECT * FROM problem WHERE probid = %s and cid = %i;", $pid, $cid);
+		$bytes = $row['problemtext'];
+		$file = tempnam(sys_get_temp_dir(), 'all');
+		file_put_contents($file.'.pdf', $bytes);
+		array_push($fileNames, $file);
+		$file .= '.pdf';
+		$pdf->addPDF($file);
+	}
+	ob_end_clean();
+	$pdf->merge('browser',"merged.pdf", $fileNames);
+}
+
+
 
 /**
  * Returns true if at least one problem in the current contest has a
@@ -541,3 +574,4 @@ function langidToAce($langid) {
 	}
 	return $langid;
 }
+?>
