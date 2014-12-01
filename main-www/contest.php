@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 	<title>Contest - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>

@@ -309,7 +309,7 @@ class FGMembersite
         {
             return'';
         }
-        return htmlentities($_POST[$value_name]);
+        return htmlentities($_POST[$value_name], ENT_QUOTES);
     }
     
     function RedirectToURL($url)
@@ -642,11 +642,11 @@ class FGMembersite
     
     function CollectRegistrationSubmission(&$formvars)
     {
-        $formvars['name'] = $this->Sanitize($_POST['name']);
-        $formvars['email'] = $this->Sanitize($_POST['email']);
-        $formvars['username'] = $this->Sanitize($_POST['username']);
-        $formvars['password'] = $this->Sanitize($_POST['password']);
-        $formvars['password2'] = $this->Sanitize($_POST['password2']);
+        $formvars['name'] = filter_var($this->Sanitize($_POST['name']), FILTER_SANITIZE_SPECIAL_CHARS);
+        $formvars['email'] = filter_var($this->Sanitize($_POST['email']), FILTER_SANITIZE_SPECIAL_CHARS);
+        $formvars['username'] = filter_var($this->Sanitize($_POST['username']), FILTER_SANITIZE_SPECIAL_CHARS);
+        $formvars['password'] = filter_var($this->Sanitize($_POST['password']), FILTER_SANITIZE_SPECIAL_CHARS);
+        $formvars['password2'] = filter_var($this->Sanitize($_POST['password2']), FILTER_SANITIZE_SPECIAL_CHARS);
 
 
     }
@@ -875,7 +875,7 @@ class FGMembersite
         }        
 	$ret_userid = mysql_insert_id($this->connection);
 	
-	// Insert userrole
+	 // Insert userrole
 	$insert_query = 'insert into userrole (userid, roleid) values ('
 			 . $ret_userid . ','
 			 . 3 . ')';
@@ -883,7 +883,8 @@ class FGMembersite
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
-        }  
+        } 
+
 
 	// -- INDIVIDUAL TEAMS
 	// Autocreate team and insert user into team
@@ -897,7 +898,7 @@ class FGMembersite
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
         }       
-
+	
 	$insert_query = 'update user set teamid= 
 			"' . $this->SanitizeForSQL($formvars['username']) . '"
 			 where username=

@@ -176,6 +176,7 @@ function show_loginpage()
     </table>
 </form>
 <a href="forgot-password.php">Forgot Password</a> | <a href="forgot-username.php">Forgot Username</a>
+<p color="red"> Once you login, please update your account settings in order to receive your t-shirt prize</p>
 <?php
 		putDOMjudgeVersion();
 		include(LIBWWWDIR . '/footer.php');

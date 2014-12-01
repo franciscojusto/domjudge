@@ -43,9 +43,7 @@
 </body>
 <style>
 img{
-
 border-radius: 4px 4px 4px 4px;
-
 }
 </style>
 </html>

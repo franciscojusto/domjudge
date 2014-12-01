@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 	<title>Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css?ver=1.0">
 	<style type="text/css">
@@ -34,7 +35,7 @@
     <input type="submit" value="Register" class="flat-button">
     </form>
     </div>
-        <h4>Register for our next coding competition to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
+        <h4>Register for our next coding competition on November 22nd to win a trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip to South Beach plus cash prizes.</h4>
 		<br><br>
         <h3>What is UltiCoder?</h3>
         <p><em>UltiCoder</em> brings together bright minded people who compete as <b>individuals</b> remotely throughout the US and Canada solving tough coding problems in an ACM style competition awarding prizes to top performers.</p><br>

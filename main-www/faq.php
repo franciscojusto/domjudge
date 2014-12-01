@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 	<title>FAQ - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
@@ -53,7 +54,7 @@ The practice competition will be held entirely online, available at <a href="htt
 <h3>When is the competition?</h3>
 			  <div>
 			    <p>
-The official competition is March 8th 2014, 1PM - 5PM EST. There is also a practise competition on February 13th from 2PM-5PM EST, if you want to try out the judging system.
+The official competition is November 22nd, 2014, 1PM - 5PM EST.
 			    </p>
 			  </div>
 <h3>What kind of problems can I expect?</h3>

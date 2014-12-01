@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 	<title>Careers - Ultimate Software Programming Competition, Win a Trip to South Beach</title>
 	<link rel="stylesheet" type="text/css" href="style.css?ver=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
@@ -39,9 +40,9 @@ _gaq.push(['_trackPageview']);
 		        <h3>Opportunities:</h3>
 		        <br>
 			        <ul>
-			          <li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*41C69C9DCC429218" target="_break">Senior Software Engineer in Florida</a></li>
-			          <li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*F8D5B36530D340E7" target="_break">Software Engineer Intern in Florida</a></li>
-			          <li><a href="https://myrec.ultimatesoftware.com/usg1006/JobBoard/JobDetails.aspx?__ID=*D4FF620DFFC66D4E" target="_break">Software Engineer Intern in Toronto</a></li>
+			          <li><a href="https://recruiting.ultipro.com/USG1006/JobBoard/dfc53730-57d1-3460-336f-ddafabd108f3/Opportunity/OpportunityDetail?opportunityId=8a79dfc1-07aa-4733-8e86-0dcf73117f1e" target="_break">Senior Software Engineer in Florida</a></li>
+			          <li><a href="https://recruiting.ultipro.com/USG1006/JobBoard/dfc53730-57d1-3460-336f-ddafabd108f3/Opportunity/OpportunityDetail?opportunityId=3393d788-9bc3-4cb3-9259-8763af1c655b" target="_break">Software Engineer Intern in Florida</a></li>
+			          <li><a href="https://recruiting.ultipro.com/USG1006/JobBoard/dfc53730-57d1-3460-336f-ddafabd108f3/Opportunity/OpportunityDetail?opportunityId=c3d6c649-5f7a-408f-ad36-af707481fee7"  target="_break">Software Engineer Intern in Toronto</a></li>
 			        </ul><br>
 			<h3>Articles:</h3>
 		        <br>

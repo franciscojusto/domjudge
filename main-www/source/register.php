@@ -28,6 +28,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <title>Register</title>
     <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
     <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
@@ -49,21 +50,21 @@
 		<div class='container'>
 		    <label for='name' >Your Full Name*: </label>
 			<div class="input">
-		    <input type='text' name='name' id='name' value='<?php echo $fgmembersite->SafeDisplay('name') ?>' maxlength="50" /><br/>
+		    <input type='text' name='name' id='name' value='<?php echo $fgmembersite->SafeDisplay('name') ?>' autocomplete='off' maxlength="50" /><br/>
 		    <span id='register_name_errorloc' class='error'></span>
 			</div>
 		</div>
 		<div class='container'>
 		    <label for='email' >Email Address*:</label>
 			<div class="input">
-		    <input type='text' name='email' id='email' value='<?php echo $fgmembersite->SafeDisplay('email') ?>' maxlength="50" /><br/>
+		    <input type='text' name='email' id='email' value='<?php echo $fgmembersite->SafeDisplay('email') ?>' autocomplete='off' maxlength="50" /><br/>
 		    <span id='register_email_errorloc' class='error'></span>
 			</div>
 		</div>
 		<div class='container'>
 		    <label for='username' >UserName*:</label>
 			<div class="input">
-		    <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' /><br/> <!--maxlength="50"-->
+		    <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' autocomplete='off' maxlength="25"/><br/>
 		    <span id='register_username_errorloc' class='error'></span>
 			</div>
 		</div>

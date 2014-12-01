@@ -32,7 +32,7 @@ VOID WHERE PROHIBITED. </h4>
 
 <h4>Eligibility</h4>
 <br>
-<p>The competition is open to contestants who are legal residents of the US or Canada and are 18 years of age or older at the time of entry. <b>Current or former employees, interns, contractors, officers, directors, members and representatives of Ultimate Software and its subsidiaries, and affiliates are eligible to compete but are not eligible to win a prize.</b> Ultimate Software reserves the right to verify eligibility and to adjudicate on any dispute at any time. All contestants must have access to the Internet, a valid postal address, and a valid email address in order to enter. </p>
+<p>The competition is open to contestants who are legal residents of the US or Canada and are 18 years of age or older at the time of entry. <b>Current or former employees, interns, contractors, officers, directors, members and representatives of Ultimate Software and its subsidiaries, and affiliates are eligible to compete but are not eligible to win a prize.</b> Ultimate Software reserves the right to verify eligibility and to adjudicate on any dispute at any time. All contestants must have access to the Internet, a valid postal address, and a valid email address in order to enter. Previous contest winners are not eligible to win 1st, 2nd, or 3rd place prizes again. </p>
 <br>
 
 <h4>How to Enter</h4>
