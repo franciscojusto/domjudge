@@ -66,8 +66,8 @@
 						for($k=2; $k < count($problem_folders); $k++)
 							{ 
 								//EACH PROBLEM  
-								$problem_files = scandir($like."/".$problem_folders[$k]);  
-								
+								$problem_files = scandir($like."/".$problem_folders[$k]);
+							
 								for($j = 2; $j < count($problem_files); $j++)
 								{
 									
@@ -104,8 +104,10 @@
 											}  
 								}
 								
+								
 								$output = $output."<div style=\"overflow:hidden; margin-bottom:20px\"> <div style=\"width:30%;float:left;\"> ".$problem_folders[$k]." : </div><div style=\"width:70%; float:left;\">"; 
 									
+									sort($problem_files);
 									//OUTPUTS FILES WITHIN THE PROBLEM FOLDERS
 									for($j=2; $j < count($problem_files);$j++)
 									{
@@ -115,7 +117,6 @@
 											{
 											$output = $output.$TAB;
 											}
-											
 										$output = $output."<a style=\"margin:5px\" href=\"CONTESTS/".$like."/".$problem_folders[$k]."/".$problem_files[$j]."\" target=\"_break\">".$cur_file[0]."</a>"; 
 										 
 									}
