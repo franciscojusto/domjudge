@@ -55,7 +55,7 @@
           </form>
         </div>
 
-        <h4>Register for our next coding competition on November 22nd to win a
+        <h4>Register for our next coding competition on April 4th to win a
         trip for 2 to <em>South Beach</em>. Top 3 Winners will each get a trip
         to South Beach plus cash prizes.</h4><br>
         <br>
