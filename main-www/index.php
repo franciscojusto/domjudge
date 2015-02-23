@@ -9,7 +9,7 @@
   <link href="style.css?ver=1.0" rel="stylesheet" type="text/css">
   <style type="text/css">
 </style>
-  <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-1.10.2.min.js"></script>
   <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 
