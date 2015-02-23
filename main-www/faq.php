@@ -47,13 +47,13 @@ Simply visit our <a href="register.php">Registration</a> page to sign up. We wil
 <h3>Where is the competition located?</h3>
 			  <div>
 			    <p>
-The practice competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
+The competition will be held entirely online, available at <a href="http://www.ulticoder.com/domjudge/public/">here</a>.
 			    </p>
 			  </div>
 <h3>When is the competition?</h3>
 			  <div>
 			    <p>
-The official competition is March 8th 2014, 1PM - 5PM EST. There is also a practise competition on February 13th from 2PM-5PM EST, if you want to try out the judging system.
+The official date of competition is <b>April 4th 2015, 1PM - 5PM EST.</b>
 			    </p>
 			  </div>
 <h3>What kind of problems can I expect?</h3>
