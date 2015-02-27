@@ -10,7 +10,7 @@
 require('init.php');
 $title="Scoreboard";
 // set auto refresh
-$refresh="30;url=./";
+$refresh = setPageRefresh($cdata);
 
 // parse filter options
 $filter = array();
@@ -34,6 +34,10 @@ if ( ! $isstatic ) {
 
 // call the general putScoreBoard function from scoreboard.php
 putScoreBoard($cdata, null, $isstatic, $filter);
+
+// ouput the splash page
+//putSplashPage($cdata);
+
 
 echo "<script type=\"text/javascript\">initFavouriteTeams();</script>";
 

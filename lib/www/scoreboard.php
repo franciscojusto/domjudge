@@ -529,12 +529,20 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 	if ( $fdata['showfinal'] ) {
 		echo "<h4 style='text-align:center'>Final Standings</h4>\n\n";
 	} elseif ( ! $fdata['cstarted'] ) {
-		echo "<h4 style='text-align:center'> " . printContestStart($cdata) . "</h4>\n\n";
+        echo "<h4 id='timenotif' style='text-align:center'> " . printContestStart($cdata) . "</h4>\n\n";
+        // overwrite the UTC time stamp with local time echo
+		echo "<script type=\"text/javascript\">
+        (function(){
+            var clientStartTime = document.getElementById(\"timenotif\"); 
+            var startTime = new Date(starttime * 1000).toString();
+            clientStartTime.innerHTML = \"scheduled to start at \" + startTime;
+        })(); </script> ";
+        include(LIBWWWDIR . '/splash.php');
 		// Stop here (do not leak problem number, descriptions etc).
 		// Alternatively we could only display the list of teams?
 		if ( ! IS_JURY ) return;
 	} else {
-		echo "<h4 style='text-align:center'>starts: " . printtime($cdata['starttime']) .
+		echo "<h4 id='timenotif' style='text-align:center'>starts: " . printtime($cdata['starttime']) .
 				" - ends: " . printtime($cdata['endtime']) ;
 
 		if ( $fdata['showfrozen'] ) {
@@ -545,6 +553,12 @@ function putScoreBoard($cdata, $myteamid = NULL, $static = FALSE, $filter = FALS
 			echo "frozen since " . printtime($cdata['freezetime']) .")";
 		}
 		echo "</h4 style='text-align:center'>\n\n";
+		echo "<script type=\"text/javascript\">
+        (function(){
+            var clientEndTime = document.getElementById(\"timenotif\"); 
+            var endTime  = new Date(endtime * 1000).toString();
+            clientEndTime.innerHTML = \"scheduled to end at \" + endTime;
+        })(); </script> "; 
 	}
 
 	// The static scoreboard does not support filtering
@@ -840,6 +854,20 @@ function calcTeamRank($cdata, $teamid, $jury = FALSE) {
 
 	return $rank;
 }
+
+/**
+ * set up auto-reload for pages
+ */
+function setPageRefresh($cdata) {
+    $now = now();
+    $contestStarted = difftime($cdata['starttime'],$now) <= 0;
+    if ($contestStarted) {
+        return "30;url=./";
+    } else {
+        return "";
+    }
+}
+
 
 /**
  * Generate scoreboard links for jury only.
