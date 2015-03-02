@@ -256,7 +256,10 @@ function updateClock()
 	date.setTime(curtime*1000);
 
 	var fmt = "";
-	if (curtime >= starttime && curtime < endtime ) {
+    if (curtime == starttime) {
+        location.reload();
+        return;
+    } else if (curtime >= starttime && curtime < endtime ) {
 		var left = endtime - curtime;
 		var what = "time left: ";
 	} else if (curtime >= activatetime && curtime < starttime ) {

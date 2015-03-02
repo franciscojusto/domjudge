@@ -461,3 +461,12 @@ ul.tabbernav li.tabberactive a:hover
 	padding: .3em;
 	cursor: pointer;
 }
+
+#splash {
+    margin: 0 auto;
+    padding-top: 2px;
+    width: 45%;
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+}
