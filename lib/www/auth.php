@@ -126,7 +126,7 @@ function show_failed_login($msg)
 <form id="signin" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
     <input type="hidden" name="cmd" value="login" />
 	<table>
-    <tr><td><label for="username">Username:</label></tr></td><tr><td><input type="text" name="username" size="15"></tr></td>
+    <tr><td><label for="username">Username (case sensitive):</label></tr></td><tr><td><input type="text" name="username" size="15"></tr></td>
     <tr><td><label for="password">Password:</label></tr></td><tr><td><input type="password" name="password" size="15"></tr></td>
     <tr><td><input type="submit" value="Submit" name="login"></tr></td>
     </table>
