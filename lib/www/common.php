@@ -344,7 +344,7 @@ function putClock() {
 	global $cdata, $username;
 
 	// current time
-	echo '<div id="clock"><span id="timecur">' . strftime('%a %d %b %Y %T %Z') . "</span>";
+	echo '<div id="clock"><span id="timecur">Loading...</span>';
 	// timediff to end of contest
 	if ( difftime(now(), $cdata['starttime']) >= 0 &&
 	     difftime(now(), $cdata['endtime'])   <  0 ) {

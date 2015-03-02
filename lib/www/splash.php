@@ -26,15 +26,15 @@ Our focus on people is evident and award-winning. Ultimate Software is ranked #2
     </p>
 
     <p>Ultimate Software is called <a href=" http://bit.ly/1f8OXdA" target="_blank">The Google of South Florida</a></p>
-    <p>Ultimate is #8 on the Forbes Most Innovative Growth Companies: <a href="http://www.forbes.com/growth-companies/list/" target="_blank">See Here</a> </p>
-    <p> Ultimate Software is named as one of the 50 most engaged Workforces in America:
+    <p>Ultimate is #8 on the 2014 Forbes Most Innovative Growth Companies: <a href="http://www.forbes.com/growth-companies/list/" target="_blank">See Here</a> </p>
+    <p>Ultimate Software is named as one of the 50 most engaged Workforces in America in 2015:
         <a href="http://www.achievers.com/engaged/winners/2015" target="_blank">See Here</a></p>
 
 <p>
  And there’s even more great news and accolades for Ultimate —Ultimate was chosen as one of 20 companies to be featured in InformationWeek’s, “20 Great Ideas To Steal In 2014” article, among Boeing, John Deere, McKesson, and other large, successful companies. View the feature <a href="http://ubm.io/1h2qhbC" target="_blank">here</a>
 </p>
 
-<h3>Here are a few vidoes about our culture:</h3>
+<h3>Here are a few videos about our culture:</h3>
 <ul style="margin: 0; padding: 0; white-space:nowrap;">
     <li style="display:inline-block; width:50%; list-style-type:none;">
         <object height="315" width="100%" data="https://www.youtube.com/embed/9yQDGpX_7Zs"></object>    
