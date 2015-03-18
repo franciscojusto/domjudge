@@ -101,7 +101,7 @@ class PostEventReport {
             $name = $row['name'];
             $email = $row['email'];
             
-            $getCompletedProblemsQuery = "SELECT probid FROM $this->scoreTable WHERE cid=$this->contestId AND teamid=$name AND iscorrect=1;";
+            $getCompletedProblemsQuery = "SELECT probid FROM $this->scoreTable WHERE cid=$this->contestId AND teamid=$name AND is_correct=1;";
             $completedProblems = mysql_fetch_array(mysql_query($getCompletedProblemsQuery, $this->connection));
             
             $output .= "<tr><td>$name</td><td>$email</td><td>".count($completedProblems)."</td><td>";
