@@ -40,6 +40,14 @@ function cdtd() {
 
 <?php include("topnav.html");?>
 
+<fieldset>
+<legend>Sample Problem</legend>
+<div class="content">
+
+<?php include("sample.php");?> 
+  
+</div>
+</fieldset>
 
 <fieldset>
 <legend>Contest</legend>
@@ -68,7 +76,6 @@ function cdtd() {
 </a>
 </div>
 </fieldset>
-
 </div>
 <?php include_once("analyticstracking.php") ?>
 </body>

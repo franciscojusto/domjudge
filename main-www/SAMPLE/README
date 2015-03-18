@@ -1,0 +1,9 @@
+Only create a directory that represents a sample problem.
+
+Each sample problem should contain the following:
+
+.pdf file   ==      problem instruction
+.in file    ==      input file
+.out file   ==      expected output
+
+Also include solutions with appropriate extension 
