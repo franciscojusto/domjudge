@@ -59,7 +59,7 @@ The official date of competition is <b>April 4th 2015, 1PM - 5PM EST.</b>
 <h3>What kind of problems can I expect?</h3>
 			  <div>
 			    <p>
-The problems in the competition are algorithm based, with points being awarded for efficiency rather than style. Topics can include any combination of the following: graph theory, combinatorics, number theory, game theory, data structures, calculus, string problems, and dynamic programming.
+See this <b><a href="../SAMPLE/Winner Winner/winner.zip">example</a></b> to get started. The problems in the competition are algorithm based, with points being awarded for efficiency rather than style. Topics can include any combination of the following: graph theory, combinatorics, number theory, game theory, data structures, calculus, string problems, and dynamic programming. See <b><a href="../results.php" target="_blank">here</a></b> for previous contests.
 			    </p>
 			  </div>
 <h3>What are the constraints for my solution?</h3>
