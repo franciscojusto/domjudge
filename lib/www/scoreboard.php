@@ -861,7 +861,8 @@ function calcTeamRank($cdata, $teamid, $jury = FALSE) {
 function setPageRefresh($cdata) {
     $now = now();
     $contestStarted = difftime($cdata['starttime'],$now) <= 0;
-    if ($contestStarted) {
+    $scoreboardFrozen = difftime($cdata['freezetime'],$now) <= 0;
+    if ($contestStarted && !$scoreboardFrozen) {
         return "30;url=./";
     } else {
         return "";
