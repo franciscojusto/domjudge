@@ -6,6 +6,13 @@
  * Part of the DOMjudge Programming Contest Jury System and licenced
  * under the GNU GPL. See README and COPYING for details.
  */
+session_start();
+if (isset($_SESSION['redirect_url']) && $_SESSION['redirect_url'] != '')
+{
+    header('Location: ./'.$_SESSION['redirect_url']);
+    unset($_SESSION['redirect_url']);
+    exit;
+}
 
 require('init.php');
 $title="Scoreboard";
