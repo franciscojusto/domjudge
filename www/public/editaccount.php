@@ -9,11 +9,13 @@
 <?php
 require('init.php');
 
-if(! logged_in()) {
+session_start();
+
+if(! logged_in()) {  
+    $_SESSION['redirect_url'] = 'editaccount.php';
     header("Location: ./login.php");
     exit;
 }
-session_start();
 
 $username = $_SESSION['username'];
 $q = $DB->q("table SELECT * FROM user WHERE username=%s", $username);
