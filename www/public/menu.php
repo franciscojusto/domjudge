@@ -11,6 +11,7 @@ logged_in(); // fill userdata
 if ( checkrole('team') ) {
 	echo "<a target=\"_top\" href=\"../team/\" accesskey=\"t\">→team</a>\n";
 	echo '<a href ="../../forum">forum</a>';
+    echo '<a href ="editaccount.php">Edit Account</a>';
 }
 if ( checkrole('jury') || checkrole('balloon') ) {
 	echo "<a target=\"_top\" href=\"../jury/\" accesskey=\"j\">→jury</a>\n";
